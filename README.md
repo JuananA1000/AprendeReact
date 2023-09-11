@@ -68,3 +68,36 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Dependencies
+
+In this project, we have installed the following libraries:
+
+**Axios** is a JavaScript library for making HTTP requests from a web browser or a Node application
+
+### `npm i -S axios`
+
+**Formik** is a popular library for managing form state in React applications
+  
+### `npm i -S formik`
+
+**Styled Components** is a popular library for styling React components using tagged template literals
+
+### `npm i -S styled-components`
+   
+**Lodash** to compare instances, in addition to manipulating and transforming data
+
+### `npm i -S lodash`
+
+**React Router** is a popular routing library for the React and React Native JavaScript library
+
+### `npm i -S react-router-dom`
+
+**Redux** is a predictable state management library for JavaScript applications, commonly used with React
+
+### 'npm i -S redux @reduxjs/toolkit'
+
+**Zustand** is a state management library for React that aims to provide a simple and flexible way to manage state in
+your applications
+
+### `npm i -S zustand`
