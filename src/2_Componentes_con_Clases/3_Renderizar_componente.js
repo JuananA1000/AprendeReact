@@ -4,7 +4,7 @@ import text from '../translations/es/global.json';
 class Boton extends Component {
   render() {
     console.log('Ejecutando Componente Botón');
-    return <button>{text['class-component-page-button']}</button>;
+    return <button>{text['class-component-page-rendercomp-button']}</button>;
   }
 }
 
@@ -16,9 +16,9 @@ class Introduccion extends Component {
     console.log(this.state);
     return (
       <div>
-        <h2>{text['class-component-page-render-component']}</h2>
+        <h2>{text['class-component-page-rendercomp']}</h2>
 
-        <button onClick={() => this.setState({ valor: 2 })}>{text['class-component-page-send']}</button>
+        <button onClick={() => this.setState({ valor: 2 })}>{text['class-component-page-rendercomp-send']}</button>
         <Boton />
       </div>
     );

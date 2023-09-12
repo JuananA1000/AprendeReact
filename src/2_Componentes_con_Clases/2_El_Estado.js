@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import text from '../translations/es/global.json';
 
-class Introduccion extends Component {
+class ElEstado extends Component {
   // El manejo del estado en react permite crear componentes dinámicos
   state = {}; // state es una palabra reservada
 
@@ -16,4 +16,4 @@ class Introduccion extends Component {
   }
 }
 
-export default Introduccion;
+export default ElEstado;

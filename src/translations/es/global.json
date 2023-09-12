@@ -1,13 +1,13 @@
 {
-  "introduction-page-title": "1. Introduccion a React",
+  "introduction-page-title": "1. Introducción a React",
   "introduction-page-text": "Hola Mundo",
 
   "class-component-page-title": "2. Componentes con clases",
-  "class-component-page-state": "El Estado",
+  "class-component-page-state": "2.1. El Estado",
   "class-component-page-state-button": "Enviar",
-  "class-component-page-render-component": "¿Cuándo se renderiza un componente?",
-  "class-component-page-send": "Enviar",
-  "class-component-page-button": "Botón",
+  "class-component-page-rendercomp": "2.2. ¿Cuándo se renderiza un componente?",
+  "class-component-page-rendercomp-send": "Enviar",
+  "class-component-page-rendercomp-button": "Botón",
 
   "functional-components-page-title": "3. Componentes Funcionales",
   "functional-components-page-intro": "Introducción",

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import text from '../translations/es/global.json';
 
 export class Introduccion extends Component {
