@@ -102,7 +102,7 @@ import IntroT13 from '../13_Zustand/1_Introduccion';
 import ActualizarDatos from '../13_Zustand/2_Actualizar_datos';
 import ActualizarDatosAsync from '../13_Zustand/3_Actualizar_datos_async';
 import LimpiarEstado from '../13_Zustand/4_Limpiar_estado';
-import MetodoGet from '../13_Zustand/5_Metodo_get'; 
+import MetodoGet from '../13_Zustand/5_Metodo_get';
 
 // --------------------------------------------------------------- //
 // ------------------- TEMA 1x. Java Web Tokens ------------------ //
@@ -112,6 +112,9 @@ import IntroT1y from '../xx_JWT/1_Introduccion';
 // --------------------------------------------------------------- //
 // -                          EXTRAS                             - //
 // --------------------------------------------------------------- //
+
+// * REACT ROUTER
+import { BrowserRouter } from 'react-router-dom';
 
 // * REDUX
 import { store } from '../10_Redux/store/store';
@@ -187,18 +190,20 @@ function App() {
         <MultiplesContextosEnCompFunc />
         </div>
 
-      <div>
-      Colocar aqui el BrowserRouter, para aplicar solo aquí el enrutamiento.
-        <IntroT9 />
-        <CreandoSPA />
-        <CapturarSegmentosDinamicos />
-        <RutasAnidadas/>
-        <LinksActivos />
-        <UseRoutes />
-        <UseAuth />
-      </div>
       */}
+      <div>
+        <BrowserRouter>
+          <IntroT9 />
+          <CreandoSPA />
+          <CapturarSegmentosDinamicos />
+          <RutasAnidadas />
+          <LinksActivos />
+          <UseRoutes />
+          <UseAuth />
+        </BrowserRouter>
+      </div>
 
+      {/*
       <div>
         <Provider store={store}>
           <IntroT10 />
@@ -206,7 +211,6 @@ function App() {
           <DepurarRedux />
         </Provider>
       </div>
-      {/*
 
       <div>
         <IntroT11 />
