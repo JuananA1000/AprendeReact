@@ -31,13 +31,12 @@
   "functional-components-page-useeffect-effect2-button": "Incrementar",
   "functional-components-page-useeffect-effect3": "Efecto al montar/desmontar un componente",
   "functional-components-page-useeffect-effect3-p": "Este texto se muestra/oculta",
-
-  "functional-components-page-usereducer": "UseReducer",
+  "functional-components-page-usereducer": "3.4. UseReducer",
   "functional-components-page-usereducer-counter": "Contador: ",
   "functional-components-page-usereducer-counter+": "+",
   "functional-components-page-usereducer-counter-": "-",
   "functional-components-page-usereducer-counter-set": "SET",
-  "functional-components-page-useref": "UseRef",
+  "functional-components-page-useref": "3.5. UseRef",
   "functional-components-page-useref-add": "Incrementar",
 
   "form-page-title": "4. Formularios",
