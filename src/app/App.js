@@ -143,9 +143,9 @@ function App() {
       */}
 
       <div>
-        {/* <IntroT3 /> */}
-        {/* <UseState /> */}
-        {/* <UseEffect /> */}
+        <IntroT3 />
+        <UseState />
+        <UseEffect />
         <UseReducer />
         {/* <UseRef /> */}
       </div>
