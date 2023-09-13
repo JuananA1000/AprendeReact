@@ -15,7 +15,7 @@ const MiComponente = ({ unaProp, otraProp }) => {
 export default function Introduccion() {
   return (
     <div>
-      <h1>{text['functional-components-page-title']}</h1>
+      <h1 style={{ textAlign: 'center' }}>{text['functional-components-page-title']}</h1>
 
       <MiComponente
         // Podemos NO mostrar estas props si no nos interesa, o mostrar solo una de ellas

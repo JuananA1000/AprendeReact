@@ -139,14 +139,17 @@ function App() {
         <ElEstado />
         <RenderizarComponente />
       </div>
-      
+
+      */}
+
       <div>
-        <IntroT3 />
-        <UseState />
-        <UseEffect />
+        {/* <IntroT3 /> */}
+        {/* <UseState /> */}
+        {/* <UseEffect /> */}
         <UseReducer />
-        <UseRef />
-      </div> 
+        {/* <UseRef /> */}
+      </div>
+      {/*
       
 
        <div>
@@ -190,7 +193,6 @@ function App() {
         <MultiplesContextosEnCompFunc />
         </div>
 
-      */}
       <div>
         <BrowserRouter>
           <IntroT9 />
@@ -202,8 +204,6 @@ function App() {
           <UseAuth />
         </BrowserRouter>
       </div>
-
-      {/*
       <div>
         <Provider store={store}>
           <IntroT10 />

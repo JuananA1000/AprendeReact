@@ -32,10 +32,17 @@
   "functional-components-page-useeffect-effect3": "Efecto al montar/desmontar un componente",
   "functional-components-page-useeffect-effect3-p": "Este texto se muestra/oculta",
   "functional-components-page-usereducer": "3.4. UseReducer",
-  "functional-components-page-usereducer-counter": "Contador: ",
+  "functional-components-page-usereducer-counter": "Contador",
   "functional-components-page-usereducer-counter+": "+",
   "functional-components-page-usereducer-counter-": "-",
   "functional-components-page-usereducer-counter-set": "SET",
+  "functional-components-page-usereducer-tasks": "Lista de tareas",
+  "functional-components-page-usereducer-tasks-add": "Añadir",
+  "functional-components-page-usereducer-tasks-remove": "Eliminar todo",
+  "functional-components-page-usereducer-theme": "Cambiar modo",
+  "functional-components-page-usereducer-theme-mode": "Modo ",
+  "functional-components-page-usereducer-theme-button": "Cambiar",
+ 
   "functional-components-page-useref": "3.5. UseRef",
   "functional-components-page-useref-add": "Incrementar",
 

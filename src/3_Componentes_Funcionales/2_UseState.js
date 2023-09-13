@@ -4,12 +4,13 @@ import text from '../translations/es/global.json';
 
 import '../style/style.css';
 /**
- * useState() sirve para controlar el estado de un componente, y ademas cambiarlo.
- * En este fichero, en el futuro, desarrollaremos, en una misma interfaz dos maneras de explicar este hook:
+ * useState() sirve para controlar el estado de un componente, y ademas cambiarlo. Este hook recoge 3 variables:
+ * - El estado en sí.
+ * - La variable 'set' que recoge el cambio de estado.
+ * - El estado por defecto
  *
- * - La primera tendrú un botón que encienda y apague una bombilla.
- *
- * - La segunda tendrú un botón que cuente de uno en uno.
+ * Estructura:
+ * const [estado, setEstado] = useState(estadoPorDefecto)
  */
 
 const UseState = () => {
