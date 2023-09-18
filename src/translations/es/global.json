@@ -1,5 +1,8 @@
 {
   "introduction-page-title": "1. Introducción a React",
+  "create-page":"create-react-app",
+  "create-page-subtitle":"Copiar comando",
+  
   "introduction-page-text": "Hola Mundo",
 
   "class-component-page-title": "2. Componentes con clases",
@@ -44,8 +47,13 @@
   "functional-components-page-usereducer-theme-button": "Cambiar",
  
   "functional-components-page-useref": "3.5. UseRef",
-  "functional-components-page-useref-add": "Incrementar",
-
+  "functional-components-page-useref-basic": "useRef básico",
+  "functional-components-page-useref-basic-p": "Abre la consola primero y haz click en este párrafo para mostrar la actividad de useRef()",
+  "functional-components-page-useref-counter": "Contador",
+  "functional-components-page-useref-counter-increase-button": "Incrementar",
+  "functional-components-page-useref-seccounter": "Contador de segundos",
+  "functional-components-page-useref-seccounter-update-button": "Actualizar",
+  
   "form-page-title": "4. Formularios",
   "form-page-button-send": "Enviar",
   "form-page-uncontrolled-components": "Componentes no controlados",
