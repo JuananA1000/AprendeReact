@@ -1,8 +1,24 @@
 {
   "introduction-page-title": "1. Introducción a React",
-  "create-page":"create-react-app",
-  "create-page-subtitle":"Copiar comando",
-  
+  "create-page": "create-react-app",
+  "create-page-subtitle": "Copiar comando",
+
+  "datarouter-page": "React",
+  "datarouter-page-navlink-t1": "Introduccion a React",
+  "datarouter-page-navlink-t2": "Componentes con clases",
+  "datarouter-page-navlink-t3": "Componentes Funcionales",
+  "datarouter-page-navlink-t4": "Formularios",
+  "datarouter-page-navlink-t5": "Formularios con Formik",
+  "datarouter-page-navlink-t6": "Styled Components",
+  "datarouter-page-navlink-t7": "Rendimiento",
+  "datarouter-page-navlink-t8": "Context",
+  "datarouter-page-navlink-t9": "React Router",
+  "datarouter-page-navlink-t10": "Redux",
+  "datarouter-page-navlink-t11": "Conexión a APIs",
+  "datarouter-page-navlink-t12": "Axios",
+  "datarouter-page-navlink-t13": "Zustand",
+  "datarouter-page-not-found-component": "NOT FOUND",
+
   "introduction-page-text": "Hola Mundo",
 
   "class-component-page-title": "2. Componentes con clases",
@@ -45,7 +61,7 @@
   "functional-components-page-usereducer-theme": "Cambiar modo",
   "functional-components-page-usereducer-theme-mode": "Modo ",
   "functional-components-page-usereducer-theme-button": "Cambiar",
- 
+
   "functional-components-page-useref": "3.5. UseRef",
   "functional-components-page-useref-basic": "useRef básico",
   "functional-components-page-useref-basic-p": "Abre la consola primero y haz click en este párrafo para mostrar la actividad de useRef()",
@@ -53,7 +69,7 @@
   "functional-components-page-useref-counter-increase-button": "Incrementar",
   "functional-components-page-useref-seccounter": "Contador de segundos",
   "functional-components-page-useref-seccounter-update-button": "Actualizar",
-  
+
   "form-page-title": "4. Formularios",
   "form-page-button-send": "Enviar",
   "form-page-uncontrolled-components": "Componentes no controlados",
