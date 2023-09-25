@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { addUser } from './store/userSlice';
 import Header from './components/Header';
 import Email from './components/Email';
+
 export default function CompYEstadoGlobal() {
   const dispatch = useDispatch();
 

@@ -83,7 +83,7 @@ import UseAuth from '../9_React_Router/6_UseAuth';
 // --------------------------------------------------------------- //
 import IntroT10 from '../10_Redux/1_Introduccion';
 import CompYEstadoGlobal from '../10_Redux/2_Comp_y_estado_global';
-import DepurarRedux from '../10_Redux/3_Depurar_Redux';
+import DepurarRedux from '../10_Redux/4_Depurar_Redux';
 
 // --------------------------------------------------------------- //
 // ------------------- TEMA 11. Conexión a APIs ------------------ //
@@ -117,17 +117,13 @@ import IntroT1y from '../xx_JWT/1_Introduccion';
 // --------------------------------------------------------------- //
 // -                          EXTRAS                             - //
 // --------------------------------------------------------------- //
-
 // * REACT ROUTER
 import { NavLink, Route, Routes } from 'react-router-dom';
-
 // * REDUX
 import { store } from '../10_Redux/store/store';
 import { Provider } from 'react-redux';
-
 // * CSS
 import './DataRouter.css'; // Importa tu archivo de estilos aquí
-
 // * lITERALES
 import text from '../translations/es/global.json';
 
@@ -200,7 +196,17 @@ export default function App() {
             <Route path='/intro-t7' element={<IntroT7 />} />
             <Route path='/intro-t8' element={<IntroT8 />} />
             <Route path='/intro-t9' element={<IntroT9 />} />
-            <Route path='/intro-t10' element={<IntroT10 />} />
+            <Route
+              path='/intro-t10'
+              element={
+                <Provider store={store}>
+                  <IntroT10 />
+                </Provider>
+              }
+            >
+
+            <Route path='/intro-t10/aaa' element={<CompYEstadoGlobal />} />
+            </Route>
             <Route path='/intro-t11' element={<IntroT11 />} />
             <Route path='/intro-t12' element={<IntroT12 />} />
             <Route path='/intro-t13' element={<IntroT13 />} />

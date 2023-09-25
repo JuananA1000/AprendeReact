@@ -1,11 +1,12 @@
 import text from '../translations/es/global.json';
-
+import MasEjemplos from './3_Mas_ejemplos';
+import { H1t10 } from '../components/Headers';
 /*
   TUTORIAL: https://youtu.be/fMiFnbufAP4?si=xkxqMY-xoEN6YpaU
   En primer lugar, iremos a App.js e importaremos
   import { Provider } from 'react-redux';
 
-  Además, montaremos el componente de la sigfuiente manera:
+  Además, montaremos el componente de la siguiente manera:
   <Provider store={store}>
     <IntroT10 />
     [...]
@@ -22,8 +23,12 @@ export default function Introduccion() {
         Lo ideal es  que este componente Provider esté en el componente de App.js, pero quiero que ese componente se
         quede limpio y solo muestre las unidades del curso, así que se repetirá.
       */}
-      <h1>{text['redux-page-title']}</h1>
+      <H1t10 />
+    
       <h2>{text['redux-page-intro']}</h2>
+      <p>Redux Toolkit es una biblioteca que simplifica la configuración y el flujo de trabajo con Redux</p>
+      <MasEjemplos />
+      
     </div>
   );
 }

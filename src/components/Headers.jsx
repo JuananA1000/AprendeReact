@@ -23,3 +23,11 @@ export function H1t3() {
     </div>
   );
 }
+
+export function H1t10() {
+  return (
+    <div>
+      <h1>{text['redux-page-title']}</h1>
+    </div>
+  );
+}
