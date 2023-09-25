@@ -126,14 +126,14 @@ import { store } from '../10_Redux/store/store';
 import { Provider } from 'react-redux';
 
 // * CSS
-import './App.css';
+import './DataRouter.css'; // Importa tu archivo de estilos aquí
 
 // * lITERALES
 import text from '../translations/es/global.json';
 
 export default function App() {
   return (
-    <div className='App'>
+    <div>
       <div>
         <h1>Índice</h1>
 
@@ -200,7 +200,7 @@ export default function App() {
             <Route path='/intro-t7' element={<IntroT7 />} />
             <Route path='/intro-t8' element={<IntroT8 />} />
             <Route path='/intro-t9' element={<IntroT9 />} />
-            <Route path='/intro-t10' element={<IntroT13 />} />
+            <Route path='/intro-t10' element={<IntroT10 />} />
             <Route path='/intro-t11' element={<IntroT11 />} />
             <Route path='/intro-t12' element={<IntroT12 />} />
             <Route path='/intro-t13' element={<IntroT13 />} />

@@ -1,0 +1,21 @@
+/* Estilo CSS para la barra de navegación horizontal */
+nav {
+  width: 100%; /* Ancho del contenedor, ajusta según tus preferencias */
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px; /* Espacio entre elementos de la lista (ajusta según tus preferencias) */
+  background-color: red;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+nav a {
+  text-decoration: none;
+}
