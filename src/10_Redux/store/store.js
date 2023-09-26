@@ -1,7 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
+
 import userSlice from './userSlice';
 import counterSlice from './counterSlice';
-// El store es un objeto que actúa como un almacén centralizado para todos los estados de una aplicación.
+import tasksSlice from './tasksSlice';
+import themeSlice from './themeSlice';
+
+// El store es un objeto que actúa como un almacén centralizado para todos los slices de una app.
 
 export const store = configureStore({
   /*
@@ -11,5 +15,7 @@ export const store = configureStore({
   reducer: {
     user: userSlice,
     counter: counterSlice,
+    tasks: tasksSlice,
+    theme: themeSlice,
   },
 });
