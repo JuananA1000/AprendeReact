@@ -202,10 +202,8 @@ export default function App() {
                 <Provider store={store}>
                   <IntroT10 />
                 </Provider>
-              }
-            >
-
-            <Route path='/intro-t10/aaa' element={<CompYEstadoGlobal />} />
+              }>
+              <Route path='/intro-t10/aaa' element={<CompYEstadoGlobal />} />
             </Route>
             <Route path='/intro-t11' element={<IntroT11 />} />
             <Route path='/intro-t12' element={<IntroT12 />} />

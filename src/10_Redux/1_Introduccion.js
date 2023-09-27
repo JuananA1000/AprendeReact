@@ -27,7 +27,6 @@ export default function Introduccion() {
     
       <h2>{text['redux-page-intro']}</h2>
       <p>Redux Toolkit es una biblioteca que simplifica la configuración y el flujo de trabajo con Redux</p>
-      <MasEjemplos />
       
     </div>
   );
