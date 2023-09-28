@@ -30,7 +30,7 @@
 
   "functional-components-page-title": "3. Componentes Funcionales",
   "functional-components-page-intro": "3.1. Introducción",
-  "functional-components-page-intro-phrase": "Hemos creado un componente que se utiliza directamente",
+  "functional-components-page-intro-phrase": "Componente Funcional básico",
   "functional-components-page-intro-greetings1": "Saludo 1: ",
   "functional-components-page-intro-greetings2": "Saludo 2: ",
   "functional-components-page-usestate": "3.2. UseState",
