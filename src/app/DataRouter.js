@@ -136,43 +136,43 @@ export default function App() {
         <nav>
           <ul>
             <li>
-              <NavLink to='/intro-t1'>{text['datarouter-page-navlink-t1']}</NavLink>
+              <NavLink to='/tema1'>{text['datarouter-page-navlink-t1']}</NavLink>
             </li>
             <li>
-              <NavLink to='/intro-t2'>{text['datarouter-page-navlink-t2']}</NavLink>
+              <NavLink to='/tema2'>{text['datarouter-page-navlink-t2']}</NavLink>
             </li>
             <li>
-              <NavLink to='/intro-t3'>{text['datarouter-page-navlink-t3']}</NavLink>
+              <NavLink to='/tema3'>{text['datarouter-page-navlink-t3']}</NavLink>
             </li>
             <li>
-              <NavLink to='/intro-t4'>{text['datarouter-page-navlink-t4']}</NavLink>
+              <NavLink to='/tema4'>{text['datarouter-page-navlink-t4']}</NavLink>
             </li>
             <li>
-              <NavLink to='/intro-t5'>{text['datarouter-page-navlink-t5']}</NavLink>
+              <NavLink to='/tema5'>{text['datarouter-page-navlink-t5']}</NavLink>
             </li>
             <li>
-              <NavLink to='/intro-t6'>{text['datarouter-page-navlink-t6']}</NavLink>
+              <NavLink to='/tema6'>{text['datarouter-page-navlink-t6']}</NavLink>
             </li>
             <li>
-              <NavLink to='/intro-t7'>{text['datarouter-page-navlink-t7']}</NavLink>
+              <NavLink to='/tema7'>{text['datarouter-page-navlink-t7']}</NavLink>
             </li>
             <li>
-              <NavLink to='/intro-t8'>{text['datarouter-page-navlink-t8']}</NavLink>
+              <NavLink to='/tema8'>{text['datarouter-page-navlink-t8']}</NavLink>
             </li>
             <li>
-              <NavLink to='/intro-t9'>{text['datarouter-page-navlink-t9']}</NavLink>
+              <NavLink to='/tema9'>{text['datarouter-page-navlink-t9']}</NavLink>
             </li>
             <li>
-              <NavLink to='/intro-t10'>{text['datarouter-page-navlink-t10']}</NavLink>
+              <NavLink to='/tema10'>{text['datarouter-page-navlink-t10']}</NavLink>
             </li>
             <li>
-              <NavLink to='/intro-t11'>{text['datarouter-page-navlink-t11']}</NavLink>
+              <NavLink to='/tema11'>{text['datarouter-page-navlink-t11']}</NavLink>
             </li>
             <li>
-              <NavLink to='/intro-t12'>{text['datarouter-page-navlink-t12']}</NavLink>
+              <NavLink to='/tema12'>{text['datarouter-page-navlink-t12']}</NavLink>
             </li>
             <li>
-              <NavLink to='/intro-t13'>{text['datarouter-page-navlink-t13']}</NavLink>
+              <NavLink to='/tema13'>{text['datarouter-page-navlink-t13']}</NavLink>
             </li>
           </ul>
         </nav>
@@ -184,30 +184,143 @@ export default function App() {
               path='/'
               element={<h1>Holi</h1>}
             />
-            <Route path='/intro-t1' element={<IntroT1 />} />
-            <Route path='/intro-t2' element={<IntroT2 />}>
-              <Route path='estado' element={<ElEstado />} />
-              <Route path='renderizar-componente' element={<RenderizarComponente />} />
-            </Route>
-            <Route path='/intro-t3' element={<IntroT3 />} />
-            <Route path='/intro-t4' element={<IntroT4 />} />
-            <Route path='/intro-t5' element={<IntroT5 />} />
-            <Route path='/intro-t6' element={<IntroT6 />} />
-            <Route path='/intro-t7' element={<IntroT7 />} />
-            <Route path='/intro-t8' element={<IntroT8 />} />
-            <Route path='/intro-t9' element={<IntroT9 />} />
+            <Route path='/tema1' element={<IntroT1 />} />
             <Route
-              path='/intro-t10'
+              path='/tema2'
+              element={
+                <>
+                  <IntroT2 />
+                  <ElEstado />
+                  <RenderizarComponente />
+                </>
+              }></Route>
+            <Route
+              path='/tema3'
+              element={
+                <>
+                  <IntroT3 />
+                  <UseState />
+                  <UseEffect />
+                  <UseReducer />
+                  <UseRef />
+                </>
+              }
+            />
+            <Route
+              path='/tema4'
+              element={
+                <>
+                  <IntroT4 />
+                  <CompNoCtrl />
+                  <CompCtrl />
+                  <ValoresMultiples />
+                </>
+              }
+            />
+            <Route
+              path='/tema5'
+              element={
+                <>
+                  <IntroT5 />
+                  <Validaciones />
+                  <EliminaCodigoRepe />
+                  <CompFormik />
+                  <CompCustom />
+                </>
+              }
+            />
+            <Route
+              path='/tema6'
+              element={
+                <>
+                  <IntroT6 />
+                  <PropsDinamicas />
+                  <ExtendiendoEstilos />
+                  <Animaciones />
+                </>
+              }
+            />
+            <Route
+              path='/tema7'
+              element={
+                <>
+                  <IntroT7 />
+                  <MemoConChildren />
+                  <UseCallback />
+                  <UseMemo />
+                </>
+              }
+            />
+            <Route
+              path='/tema8'
+              element={
+                <>
+                  <IntroT8 />
+                  <ActualizarEstado />
+                  <ProblemaDeContext />
+                  <ContextEnComponentesDeClase />
+                  <MultiplesContextos />
+                  <MultiplesContextosEnCompFunc />
+                </>
+              }
+            />
+            <Route
+              path='/tema9'
+              element={
+                <>
+                  <IntroT9 />
+                  <CreandoSPA />
+                  <CapturarSegmentosDinamicos />
+                  <RutasAnidadas />
+                  <LinksActivos />
+                  <UseRoutes />
+                  <UseAuth />
+                </>
+              }
+            />
+            <Route
+              path='/tema10'
               element={
                 <Provider store={store}>
                   <IntroT10 />
+                  <CompYEstadoGlobal />
+                  <DepurarRedux />
                 </Provider>
-              }>
-              <Route path='/intro-t10/aaa' element={<CompYEstadoGlobal />} />
-            </Route>
-            <Route path='/intro-t11' element={<IntroT11 />} />
-            <Route path='/intro-t12' element={<IntroT12 />} />
-            <Route path='/intro-t13' element={<IntroT13 />} />
+              }
+            />
+            <Route
+              path='/tema11'
+              element={
+                <>
+                  <IntroT11 />
+                  <FetchComoUnPRO />
+                  <FetchConCustomHooks />
+                  <ComprobarPeticion />
+                  <CancelarPeticion />
+                  <RenderAsYouFetch />
+                </>
+              }
+            />
+            <Route
+              path='/tema12'
+              element={
+                <>
+                  <IntroT12 />
+                </>
+              }
+            />
+            <Route
+              path='/tema13'
+              element={
+                <>
+                  <IntroT13 />
+                  <ActualizarDatos />
+                  <ActualizarDatosAsync />
+                  <LimpiarEstado />
+                  <MetodoGet />
+                </>
+              }
+            />
             <Route path='*' element={<h1>{text['datarouter-page-not-found-component']}</h1>} />
           </Routes>
         </section>
@@ -216,94 +329,8 @@ export default function App() {
       {/* 
 
       <div>
-        <IntroT2 />
-        <ElEstado />
-        <RenderizarComponente />
-      </div>
-
-      <div>
-        <IntroT3 />
-        <UseState />
-        <UseEffect />
-        <UseReducer />
-        <UseRef />
-      </div>
-
-      <div>
-        <IntroT4 />
-        <CompNoCtrl />
-        <CompCtrl />
-        <ValoresMultiples />
-      </div>
-
-      <div>
-        <IntroT5 />
-        <Validaciones />
-        <EliminaCodigoRepe />
-        <CompFormik />
-        <CompCustom />
-      </div>
-
-      <div>
-        <IntroT6 />
-        <PropsDinamicas />
-        <ExtendiendoEstilos />
-        <Animaciones />
-      </div>
-
-      <div>
-        <IntroT7 />
-        <MemoConChildren />
-        <UseCallback />
-        <UseMemo />
-      </div>
-
-      <div>
-        <IntroT8 />
-        <ActualizarEstado />
-        <ProblemaDeContext />
-        <ContextEnComponentesDeClase />
-        <MultiplesContextos />
-        <MultiplesContextosEnCompFunc />
-      </div>
-
-      <div>
-          <IntroT9 />
-          <CreandoSPA />
-          <CapturarSegmentosDinamicos />
-          <RutasAnidadas />
-          <LinksActivos />
-          <UseRoutes />
-          <UseAuth />
-      </div>
-
-      <div>
-        <Provider store={store}>
-          <IntroT10 />
-          <CompYEstadoGlobal />
-          <DepurarRedux />
-        </Provider>
-      </div>
-
-      <div>
-        <IntroT11 />
-        <FetchComoUnPRO />
-        <FetchConCustomHooks />
-        <ComprobarPeticion />
-        <CancelarPeticion />
-        <RenderAsYouFetch />
-      </div>
-
-      <div>
-        <IntroT12 />
-      </div>
-
-      <div>
         <IntroT13 />
-        <ActualizarDatos />
-        <ActualizarDatosAsync />
-        <LimpiarEstado />
-        <MetodoGet />
+
       </div>
 
       <div>
