@@ -2,7 +2,6 @@ import text from '../translations/es/global.json';
 import { asyncStore } from './store/asyncStore';
 
 export default function ActualizarDatosAsync() {
-
   const values = asyncStore((state) => ({
     contador: state.contador,
     titulo: state.titulo,
@@ -10,6 +9,7 @@ export default function ActualizarDatosAsync() {
   }));
 
   const { incrementar, getPosts } = asyncStore();
+
   return (
     <div>
       <h2>{text['zustand-page-asyncupdate']}</h2>
