@@ -31,3 +31,11 @@ export function H1t10() {
     </div>
   );
 }
+
+export function H1t13() {
+  return (
+    <div>
+      <h1>{text['zustand-page-title']}</h1>
+    </div>
+  );
+}

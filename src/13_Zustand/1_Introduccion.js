@@ -1,5 +1,13 @@
 import text from '../translations/es/global.json';
 import { counterStore } from './store/counterStore';
+import { H1t13 } from '../components/Headers';
+
+/*
+  Zustand es una biblioteca para aplicaciones ReactJS que permite manejar del estado global de nuestra aplicación de
+  manera más sencilla que Redux.
+
+  TUTORIAL: https://youtu.be/pAHPHivDbuE?si=NT2R9FyWiaMlB_gl
+*/
 
 export default function Introduccion() {
   // Así importamos valores del estado uno por uno
@@ -15,7 +23,9 @@ export default function Introduccion() {
   console.log('VALUES: ', values);
   return (
     <div>
-      <h1>{text['zustand-page-title']}</h1>
+      <H1t13 />
+
+      <p>{text['zustand-page-description']}</p>
       <h2>{text['zustand-page-intro']}</h2>
 
       <h3>{text['zustand-page-intro-one-by-one']}</h3>

@@ -1,4 +1,3 @@
-import { json } from 'react-router-dom';
 import text from '../translations/es/global.json';
 import { asyncStore } from './store/asyncStore';
 

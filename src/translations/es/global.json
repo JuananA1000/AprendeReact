@@ -257,6 +257,7 @@
   "axios-page-loading": "Cargando...",
 
   "zustand-page-title": "13. Zustand",
+  "zustand-page-description": "Zustand es una biblioteca para aplicaciones ReactJS que permite manejar del estado global de nuestra aplicación de manera más sencilla que Redux.",
   "zustand-page-intro": "13.1. Introducción",
   "zustand-page-intro-one-by-one": "Importamos valores uno a uno",
   "zustand-page-intro-one-by-one-counter": "Contedor: ",
