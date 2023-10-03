@@ -20,7 +20,6 @@ export default function Introduccion() {
     titulo: state.titulo,
   }));
 
-  console.log('VALUES: ', values);
   return (
     <div>
       <H1t13 />
