@@ -131,9 +131,8 @@ export default function App() {
   return (
     <div>
       <div>
-        <h1>Índice</h1>
 
-        <nav>
+        {/* <nav>
           <ul>
             <li>
               <NavLink to='/tema1'>{text['datarouter-page-navlink-t1']}</NavLink>
@@ -175,7 +174,7 @@ export default function App() {
               <NavLink to='/tema13'>{text['datarouter-page-navlink-t13']}</NavLink>
             </li>
           </ul>
-        </nav>
+        </nav> */}
 
         <section>
           <Routes>

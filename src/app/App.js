@@ -1,3 +1,4 @@
+import Sidebar from '../components/SideBar';
 import './App.css';
 
 import DataRouter from './DataRouter';
@@ -8,7 +9,10 @@ function App() {
     <div className='App'>
       <div>
         <BrowserRouter>
+        <Sidebar>
+
           <DataRouter />
+        </Sidebar>
         </BrowserRouter>
       </div>
     </div>
