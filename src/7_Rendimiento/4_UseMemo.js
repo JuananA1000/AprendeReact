@@ -1,7 +1,7 @@
 import { useState, useCallback, useMemo } from 'react';
-import MemoTitle from '../components/Rendimiento/MemoTitle';
-import MemoMyForm from '../components/Rendimiento/Forms/MemoMyForm';
-import ListChildren from '../components/Rendimiento/Lists/ListChildren';
+import MemoTitle from './components/MemoTitle';
+import MemoMyForm from './components/Forms/MemoMyForm';
+import ListChildren from './components/Lists/ListChildren';
 
 function App() {
   const [valores, setValores] = useState([]);

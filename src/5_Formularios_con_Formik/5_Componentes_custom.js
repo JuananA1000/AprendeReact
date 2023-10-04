@@ -2,10 +2,10 @@ import { Formik, Form } from 'formik';
 import text from '../translations/es/global.json';
 
 // Componentes custom
-import CheckBox from '../components/Formik/CheckBox';
-import Radio from '../components/Formik/Radio';
-import Select from '../components/Formik/Select';
-import TextInput from '../components/Formik/TextInput';
+import CheckBox from './components/CheckBox';
+import Radio from './components/Radio';
+import Select from './components/Select';
+import TextInput from './components/TextInput';
 
 export default function ComponentesCustom() {
   const validate = (values) => {

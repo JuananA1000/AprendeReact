@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import Title from '../components/Rendimiento/Title';
-import MyForm from '../components/Rendimiento/Forms/MyForm';
-import MyList from '../components/Rendimiento/Lists/MyList';
+import Title from './components/Title';
+import MyForm from './components/Forms/MyForm';
+import MyList from './components/Lists/MyList';
 import text from '../translations/es/global.json';
 
 export default function Introduccion() {
