@@ -1,18 +1,16 @@
 import Sidebar from '../components/SideBar';
-import './App.css';
-
 import DataRouter from './DataRouter';
 import { BrowserRouter } from 'react-router-dom';
+import './App.css';
 
 function App() {
   return (
     <div className='App'>
       <div>
         <BrowserRouter>
-        <Sidebar>
-
-          <DataRouter />
-        </Sidebar>
+          <Sidebar>
+            <DataRouter />
+          </Sidebar>
         </BrowserRouter>
       </div>
     </div>

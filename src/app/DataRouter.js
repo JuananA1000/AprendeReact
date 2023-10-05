@@ -131,51 +131,6 @@ export default function App() {
   return (
     <div>
       <div>
-
-        {/* <nav>
-          <ul>
-            <li>
-              <NavLink to='/tema1'>{text['datarouter-page-navlink-t1']}</NavLink>
-            </li>
-            <li>
-              <NavLink to='/tema2'>{text['datarouter-page-navlink-t2']}</NavLink>
-            </li>
-            <li>
-              <NavLink to='/tema3'>{text['datarouter-page-navlink-t3']}</NavLink>
-            </li>
-            <li>
-              <NavLink to='/tema4'>{text['datarouter-page-navlink-t4']}</NavLink>
-            </li>
-            <li>
-              <NavLink to='/tema5'>{text['datarouter-page-navlink-t5']}</NavLink>
-            </li>
-            <li>
-              <NavLink to='/tema6'>{text['datarouter-page-navlink-t6']}</NavLink>
-            </li>
-            <li>
-              <NavLink to='/tema7'>{text['datarouter-page-navlink-t7']}</NavLink>
-            </li>
-            <li>
-              <NavLink to='/tema8'>{text['datarouter-page-navlink-t8']}</NavLink>
-            </li>
-            <li>
-              <NavLink to='/tema9'>{text['datarouter-page-navlink-t9']}</NavLink>
-            </li>
-            <li>
-              <NavLink to='/tema10'>{text['datarouter-page-navlink-t10']}</NavLink>
-            </li>
-            <li>
-              <NavLink to='/tema11'>{text['datarouter-page-navlink-t11']}</NavLink>
-            </li>
-            <li>
-              <NavLink to='/tema12'>{text['datarouter-page-navlink-t12']}</NavLink>
-            </li>
-            <li>
-              <NavLink to='/tema13'>{text['datarouter-page-navlink-t13']}</NavLink>
-            </li>
-          </ul>
-        </nav> */}
-
         <section>
           <Routes>
             <Route
@@ -324,17 +279,6 @@ export default function App() {
           </Routes>
         </section>
       </div>
-
-      {/* 
-
-      <div>
-        <IntroT13 />
-
-      </div>
-
-      <div>
-        <IntroT1y />
-      </div> */}
     </div>
   );
 }
