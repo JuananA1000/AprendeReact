@@ -5,9 +5,6 @@ import { NavLink } from 'react-router-dom';
 // TUTORIAL: https://youtu.be/IathdVB65Lw?si=cNSw628Ue1lk3Ud9&t=315
 
 const Sidebar = ({ children }) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
-
   const menuItem = [
     {
       path: '/tema1',
@@ -79,19 +76,16 @@ const Sidebar = ({ children }) => {
 
   return (
     <div className='container'>
-      <div style={{ width: isOpen ? '200px' : '50px' }} className='sidebar'>
+      <div style={{ width: '200px' }} className='sidebar'>
         <div className='top_section'>
-          {/* <h1 style={{ display: isOpen ? 'block' : 'none' }} className='logo'>
-            Logo
-          </h1> */}
-          <div style={{ marginLeft: isOpen ? '50px' : '0px' }} className='bars' onClick={toggle}>
+          <div style={{ marginLeft: '50px' }} className='bars'>
             {text['sidebar-component-index']}
           </div>
         </div>
         {menuItem.map((item, index) => (
           <NavLink to={item.path} key={index} className='link' activeclassName='active'>
             <div className='icon'>{item.icon}</div>
-            <div style={{ display: isOpen ? 'block' : 'none' }} className='link_text'>
+            <div style={{ display: 'block' }} className='link_text'>
               {item.nombreTema}
             </div>
           </NavLink>
