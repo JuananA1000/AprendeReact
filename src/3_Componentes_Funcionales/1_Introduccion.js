@@ -1,6 +1,8 @@
 import text from '../translations/es/global.json';
 import { useState } from 'react';
 
+import './style.css'
+
 const MiComponente = ({ unaProp, otraProp }) => {
   const [mostrarImagen, setMostrarImagen] = useState(false);
 
