@@ -1,26 +1,24 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import text from '../translations/es/global.json';
+import { NavLink } from 'react-router-dom';
 
 // TUTORIAL: https://youtu.be/IathdVB65Lw?si=cNSw628Ue1lk3Ud9&t=315
-
-// import { FaTh, FaBars, FaUserAlt, FaRegChartBar, FaCommentAlt, FaShoppingBag, FaThList } from 'react-icons/fa';
-import { NavLink } from 'react-router-dom';
 
 const Sidebar = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
-  
+
   const menuItem = [
     {
       path: '/tema1',
       tema: 'Tema1',
       nombreTema: 'Intro',
-      // icon: <FaTh />,
+      // A lo mejor le añado iconos con alguna librería
     },
     {
       path: '/tema2',
       tema: 'Tema2',
       nombreTema: 'Componentes con clases',
-      // icon: <FaTh />,
     },
     {
       path: '/tema3',
@@ -86,9 +84,8 @@ const Sidebar = ({ children }) => {
           {/* <h1 style={{ display: isOpen ? 'block' : 'none' }} className='logo'>
             Logo
           </h1> */}
-          <div style={{ marginLeft: isOpen ? '50px' : '0px' }} className='bars' onClick={toggle} >
-            {/* <FaBars onClick={toggle} /> */}
-            nombreTema
+          <div style={{ marginLeft: isOpen ? '50px' : '0px' }} className='bars' onClick={toggle}>
+            {text['sidebar-component-index']}
           </div>
         </div>
         {menuItem.map((item, index) => (
@@ -96,8 +93,6 @@ const Sidebar = ({ children }) => {
             <div className='icon'>{item.icon}</div>
             <div style={{ display: isOpen ? 'block' : 'none' }} className='link_text'>
               {item.nombreTema}
-              {/* {item.tema} */}
-              
             </div>
           </NavLink>
         ))}

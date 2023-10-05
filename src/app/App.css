@@ -1,3 +1,6 @@
+/* --------------------------------------------------------------- */
+/* ----------------------- Estilo General ------------------------ */
+/* --------------------------------------------------------------- */
 .App {
   text-align: left;
 }
@@ -37,56 +40,62 @@
   }
 }
 
-/* -------------------------------------- */
+/* --------------------------------------------------------------- */
+/* ----------------------- Estilo SideBar ------------------------ */
+/* --------------------------------------------------------------- */
 
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
   text-decoration: none;
 }
-.container{
-  display:flex;
+.container {
+  display: flex;
 }
-main{
+main {
   width: 100%;
   padding: 20px;
 }
-.sidebar{
-  background: #000;
-  color: #fff;
+.sidebar {
+  background: #d9d9d9;
+  color: #000000;
   height: 100vh;
   width: 200px;
   transition: all 0.5s;
 }
-.top_section{
+.top_section {
   display: flex;
-  align-items:center;
-  padding:20px 15px;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
 }
-.logo{
+.logo {
   font-size: 30px;
 }
-.bars{
+.bars {
   display: flex;
   font-size: 25px;
   margin-left: 50px;
 }
-.link{
+.link {
   display: flex;
-  color: #fff;
-  padding: 10px 15px;
+  color: #000000;
+  padding: 5px 15px;
   gap: 15px;
   transition: all 0.5s;
 }
-.link:hover{
-  background:lightskyblue;
+.link:hover {
+  background: #a4a4a4;
   color: #000;
   transition: all 0.5s;
 }
-.active{
-  background: lightskyblue;
+.active {
+  text-decoration: underline;
   color: #000;
 }
-.icon, .link_text{
+.icon,
+.link_text {
   font-size: 20px;
 }
