@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import text from '../translations/es/global.json';
 import { NavLink } from 'react-router-dom';
 
@@ -10,7 +9,7 @@ const Sidebar = ({ children }) => {
       path: '/tema1',
       tema: 'Tema1',
       nombreTema: 'Intro',
-      // A lo mejor le añado iconos con alguna librería
+      // PENDIENTE: A lo mejor le añado iconos con alguna librería
     },
     {
       path: '/tema2',

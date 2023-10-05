@@ -126,6 +126,7 @@ import { Provider } from 'react-redux';
 import './DataRouter.css'; // Importa tu archivo de estilos aquí
 // * lITERALES
 import text from '../translations/es/global.json';
+import Sidebar from '../components/SideBar';
 
 export default function App() {
   return (
@@ -138,7 +139,9 @@ export default function App() {
               path='/'
               element={<h1>Holi</h1>}
             />
+
             <Route path='/tema1' element={<IntroT1 />} />
+
             <Route
               path='/tema2'
               element={
