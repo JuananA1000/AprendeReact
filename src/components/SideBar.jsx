@@ -71,6 +71,11 @@ const Sidebar = ({ children }) => {
       tema: 'Tema13',
       nombreTema: 'Zustand',
     },
+    {
+      path: '/tema14',
+      tema: 'Tema14',
+      nombreTema: 'JSON Web Tokens',
+    },
   ];
 
   return (

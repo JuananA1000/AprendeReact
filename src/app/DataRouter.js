@@ -110,9 +110,9 @@ import LimpiarEstado from '../13_Zustand/4_Limpiar_estado';
 import MetodoGet from '../13_Zustand/5_Metodo_get';
 
 // --------------------------------------------------------------- //
-// ------------------- TEMA 1x. Java Web Tokens ------------------ //
+// ------------------- TEMA 14. Java Web Tokens ------------------ //
 // --------------------------------------------------------------- //
-import IntroT1y from '../xx_JWT/1_Introduccion';
+import IntroT14 from '../14_JWT/1_Introduccion';
 
 // --------------------------------------------------------------- //
 // -                          EXTRAS                             - //
@@ -139,9 +139,7 @@ export default function App() {
               path='/'
               element={<h1>Holi</h1>}
             />
-
             <Route path='/tema1' element={<IntroT1 />} />
-
             <Route
               path='/tema2'
               element={
@@ -275,6 +273,14 @@ export default function App() {
                   <ActualizarDatosAsync />
                   <LimpiarEstado />
                   <MetodoGet />
+                </>
+              }
+            />
+            <Route
+              path='/tema14'
+              element={
+                <>
+                  <IntroT14 />
                 </>
               }
             />
