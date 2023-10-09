@@ -290,5 +290,8 @@
   "zustand-page-get-clear-button": "CLEAR",
   "zustand-page-get-multiply-button": "x2",
 
+  "jwt-page-title": "14. JSON Web Tokens (JWT)",
+  "jwt-page-intro": "Introducción",
+
   "": ""
 }

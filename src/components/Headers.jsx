@@ -39,3 +39,11 @@ export function H1t13() {
     </div>
   );
 }
+
+export function H1t14() {
+  return (
+    <div>
+      <h1>{text['jwt-page-title']}</h1>
+    </div>
+  );
+}
