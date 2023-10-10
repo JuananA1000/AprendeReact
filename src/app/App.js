@@ -1,4 +1,4 @@
-import Sidebar from '../components/SideBar';
+import Sidebar from '../components/SideBar/SideBar';
 import DataRouter from './DataRouter';
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';

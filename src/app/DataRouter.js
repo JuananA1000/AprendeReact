@@ -126,7 +126,7 @@ import { Provider } from 'react-redux';
 import './DataRouter.css'; // Importa tu archivo de estilos aquí
 // * lITERALES
 import text from '../translations/es/global.json';
-import Sidebar from '../components/SideBar';
+import Sidebar from '../components/SideBar/SideBar';
 
 export default function App() {
   return (
