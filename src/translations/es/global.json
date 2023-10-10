@@ -292,6 +292,7 @@
 
   "jwt-page-title": "14. JSON Web Tokens (JWT)",
   "jwt-page-intro": "Introducción",
+  "jwt-page-p": "Los JSON Web Tokens son objetos JSON que permiten a un usuario identificarse en una web y acceder a ciertas rutas que, de lo contrario, le estarían denegadas.",
 
   "": ""
 }
