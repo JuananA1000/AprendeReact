@@ -17,10 +17,10 @@ const UseState = () => {
   const [inputValue, setInputValue] = useState('');
   const [luz, setLuz] = useState(require('../images/t3/sun.png'));
   const [claseDiv, setClaseDiv] = useState('day');
-  
+
   const modoDia = () => {
     setLuz(require('../images/t3/sun.png'));
-    setClaseDiv('day' );
+    setClaseDiv('day');
 
     console.log('Ahora es de día');
   };
@@ -42,7 +42,6 @@ const UseState = () => {
     }
   };
 
-
   return (
     <div>
       <h2> {text['functional-components-page-usestate']} </h2>
@@ -53,31 +52,49 @@ const UseState = () => {
           flexDirection: 'row',
           justifyContent: 'space-around',
         }}>
+        {/* 
+          -----------------------------------------------------  
+          -------------------  Interruptor  -------------------  
+          -----------------------------------------------------  
+        */}
         <div className={claseDiv}>
-          <h3> {text['functional-components-page-usestate-switch']} </h3>
-          <img src={luz} alt={luz} width={70} />
+          <h3 style={{padding:'10px 15px'}}> {text['functional-components-page-usestate-switch']} </h3>
+          <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+            <img src={luz} alt={luz} width={70} />
+          </div>
           <div style={{ display: 'flex', justifyContent: 'space-around' }}>
             <button onClick={modoDia}>{text['functional-components-page-usestate-switch-on']}</button>
             <button onClick={modoNoche}>{text['functional-components-page-usestate-switch-off']}</button>
           </div>
         </div>
 
+        {/* 
+          --------------------------------------------------
+          -------------------  Contador  -------------------
+          --------------------------------------------------
+        */}
         <div className='greenGradient'>
-          <h3>{text['functional-components-page-usestate-counter']}</h3>
-
-          {contador}
-          <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-            <button onClick={() => setContador(contador - 1)}>
-              {text['functional-components-page-usestate-counter-']}
-            </button>
-            <button onClick={() => setContador(contador + 1)}>
-              {text['functional-components-page-usestate-counter+']}
-            </button>
+          <h3 style={{padding:'10px 15px'}}>{text['functional-components-page-usestate-counter']}</h3>
+          <div>
+            <div style={{ display: 'flex', justifyContent: 'space-around', fontSize: '100px' }}>{contador}</div>
+            <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+              <button onClick={() => setContador(contador - 1)}>
+                {text['functional-components-page-usestate-counter-']}
+              </button>
+              <button onClick={() => setContador(contador + 1)}>
+                {text['functional-components-page-usestate-counter+']}
+              </button>
+            </div>
           </div>
         </div>
 
+        {/* 
+          ---------------------------------------------------------  
+          -------------------  Lista de tareas  -------------------  
+          ---------------------------------------------------------  
+        */}
         <div className='greenGradient'>
-          <h3>{text['functional-components-page-usestate-add']}</h3>
+          <h3 style={{padding:'10px 15px'}}>{text['functional-components-page-usestate-add']}</h3>
           <div style={{ display: 'flex', justifyContent: 'space-around' }}>
             <input
               style={{
