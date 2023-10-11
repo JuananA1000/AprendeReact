@@ -15,33 +15,33 @@ const UseState = () => {
   const [contador, setContador] = useState(0);
   const [items, setItems] = useState([]);
   const [inputValue, setInputValue] = useState('');
-  const [luz, setLuz] = useState('☀️');
+  const [luz, setLuz] = useState(require('../images/t3/sun.png'));
   const [claseDiv, setClaseDiv] = useState('day');
+  
+  const modoDia = () => {
+    setLuz(require('../images/t3/sun.png'));
+    setClaseDiv('day' );
+
+    console.log('Ahora es de día');
+  };
+
+  const modoNoche = () => {
+    setLuz(require('../images/t3/moon.png'));
+    setClaseDiv('night');
+
+    console.log('Ahora es de noche');
+  };
 
   const agregarItem = () => {
     if (
       inputValue.trim() !== '' &&
-      items.length <= 2
-      //  limitamos la cantidad de items a 3
+      items.length <= 2 //  limitamos la cantidad de items a 3 --> 0, 1, 2
     ) {
       setItems([...items, inputValue]);
       setInputValue('');
     }
   };
 
-  const modoDia = () => {
-    setLuz('☀️');
-    setClaseDiv('day');
-
-    console.log('Ahora es de día');
-  };
-
-  const modoNoche = () => {
-    setLuz('🌙');
-    setClaseDiv('night');
-
-    console.log('Ahora es de noche');
-  };
 
   return (
     <div>
@@ -55,7 +55,7 @@ const UseState = () => {
         }}>
         <div className={claseDiv}>
           <h3> {text['functional-components-page-usestate-switch']} </h3>
-          <div>{luz}</div>
+          <img src={luz} alt={luz} width={70} />
           <div style={{ display: 'flex', justifyContent: 'space-around' }}>
             <button onClick={modoDia}>{text['functional-components-page-usestate-switch-on']}</button>
             <button onClick={modoNoche}>{text['functional-components-page-usestate-switch-off']}</button>
