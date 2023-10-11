@@ -37,22 +37,29 @@ const UseRef = () => {
     <div>
       <h2>{text['functional-components-page-useref']}</h2>
 
-      <div>
-        <h3>{text['functional-components-page-useref-basic']}</h3>
-        <p onClick={click} ref={refBasico} style={{ backgroundColor: 'red' }}>
-          {text['functional-components-page-useref-basic-p']}
-        </p>
-      </div>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'space-around',
+        }}>
+        <div className='greenGradient'>
+          <h3>{text['functional-components-page-useref-basic']}</h3>
+          <p onClick={click} ref={refBasico}>
+            {text['functional-components-page-useref-basic-p']}
+          </p>
+        </div>
 
-      <div>
-        <h3>{text['functional-components-page-useref-counter']}</h3>
-        <p> {contadorRef.current}</p>
-        <button onClick={increment}>{text['functional-components-page-useref-counter-increase-button']}</button>
-      </div>
+        <div className='greenGradient'>
+          <h3>{text['functional-components-page-useref-counter']}</h3>
+          <p> {contadorRef.current}</p>
+          <button onClick={increment}>{text['functional-components-page-useref-counter-increase-button']}</button>
+        </div>
 
-      <div>
-        <h3>{text['functional-components-page-useref-seccounter']}</h3>
-        {seconds.current}
+        <div className='greenGradient'>
+          <h3>{text['functional-components-page-useref-seccounter']}</h3>
+          {seconds.current}
+        </div>
       </div>
 
       {/* 

@@ -18,6 +18,8 @@ const UseState = () => {
   const [luz, setLuz] = useState(require('../images/t3/sun.png'));
   const [claseDiv, setClaseDiv] = useState('day');
 
+  const botonBorrar = <button>BORRAR</button>;
+
   const modoDia = () => {
     setLuz(require('../images/t3/sun.png'));
     setClaseDiv('day');
@@ -58,7 +60,7 @@ const UseState = () => {
           -----------------------------------------------------  
         */}
         <div className={claseDiv}>
-          <h3 style={{padding:'10px 15px'}}> {text['functional-components-page-usestate-switch']} </h3>
+          <h3 style={{ padding: '10px 15px' }}> {text['functional-components-page-usestate-switch']} </h3>
           <div style={{ display: 'flex', justifyContent: 'space-around' }}>
             <img src={luz} alt={luz} width={70} />
           </div>
@@ -74,7 +76,7 @@ const UseState = () => {
           --------------------------------------------------
         */}
         <div className='greenGradient'>
-          <h3 style={{padding:'10px 15px'}}>{text['functional-components-page-usestate-counter']}</h3>
+          <h3 style={{ padding: '10px 15px' }}>{text['functional-components-page-usestate-counter']}</h3>
           <div>
             <div style={{ display: 'flex', justifyContent: 'space-around', fontSize: '100px' }}>{contador}</div>
             <div style={{ display: 'flex', justifyContent: 'space-around' }}>
@@ -94,7 +96,7 @@ const UseState = () => {
           ---------------------------------------------------------  
         */}
         <div className='greenGradient'>
-          <h3 style={{padding:'10px 15px'}}>{text['functional-components-page-usestate-add']}</h3>
+          <h3 style={{ padding: '10px 15px' }}>{text['functional-components-page-usestate-add']}</h3>
           <div style={{ display: 'flex', justifyContent: 'space-around' }}>
             <input
               style={{

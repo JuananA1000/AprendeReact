@@ -63,9 +63,23 @@ const UseEffect = () => {
   return (
     <div>
       <h2>{text['functional-components-page-useeffect']}</h2>
-      <Efecto1 />
-      <Efecto2 />
-      <Efecto3 />
+
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'space-around',
+        }}>
+        <div className='greenGradient'>
+          <Efecto1 />
+        </div>
+        <div className='greenGradient'>
+          <Efecto2 />
+        </div>
+        <div className='greenGradient'>
+          <Efecto3 />
+        </div>
+      </div>
     </div>
   );
 };

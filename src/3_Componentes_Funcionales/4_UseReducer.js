@@ -66,49 +66,55 @@ const UseReducer = () => {
   return (
     <div>
       <h2>{text['functional-components-page-usereducer']}</h2>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'space-around',
+        }}>
+        <div className='greenGradient'>
+          <h3>{text['functional-components-page-usereducer-counter']}</h3>
+          {state.contador}
+          <input value={valor} onChange={(e) => setValor(e.target.value)} />
+          <button onClick={() => dispatchContador({ type: 'incrementar' })}>
+            {text['functional-components-page-usereducer-counter+']}
+          </button>
+          <button onClick={() => dispatchContador({ type: 'decrementar' })}>
+            {text['functional-components-page-usereducer-counter-']}
+          </button>
+          <button onClick={() => dispatchContador({ type: 'set', payload: valor })}>
+            {text['functional-components-page-usereducer-counter-set']}
+          </button>
+        </div>
 
-      <div>
-        <h3>{text['functional-components-page-usereducer-counter']}</h3>
-        {state.contador}
-        <input value={valor} onChange={(e) => setValor(e.target.value)} />
-        <button onClick={() => dispatchContador({ type: 'incrementar' })}>
-          {text['functional-components-page-usereducer-counter+']}
-        </button>
-        <button onClick={() => dispatchContador({ type: 'decrementar' })}>
-          {text['functional-components-page-usereducer-counter-']}
-        </button>
-        <button onClick={() => dispatchContador({ type: 'set', payload: valor })}>
-          {text['functional-components-page-usereducer-counter-set']}
-        </button>
-      </div>
+        <div className='greenGradient'>
+          <h3>{text['functional-components-page-usereducer-tasks']}</h3>
+          <input type='text' value={nuevaTarea} onChange={(e) => setNuevaTarea(e.target.value)} />
+          <button onClick={agregarTarea}>{text['functional-components-page-usereducer-tasks-add']}</button>
+          <ul>
+            {tareas.map((tarea, index) => (
+              <>
+                <li key={index}>
+                  {tarea} <button onClick={() => dispatchTarea({ type: 'REMOVE', index })}>🗑️</button>
+                </li>
+              </>
+            ))}
+          </ul>
+          <button onClick={() => dispatchTarea({ type: 'REMOVEALL' })}>
+            {text['functional-components-page-usereducer-tasks-remove']}
+          </button>
+        </div>
 
-      <div>
-        <h3>{text['functional-components-page-usereducer-tasks']}</h3>
-        <input type='text' value={nuevaTarea} onChange={(e) => setNuevaTarea(e.target.value)} />
-        <button onClick={agregarTarea}>{text['functional-components-page-usereducer-tasks-add']}</button>
-        <ul>
-          {tareas.map((tarea, index) => (
-            <>
-              <li key={index}>
-                {tarea} <button onClick={() => dispatchTarea({ type: 'REMOVE', index })}>🗑️</button>
-              </li>
-            </>
-          ))}
-        </ul>
-        <button onClick={() => dispatchTarea({ type: 'REMOVEALL' })}>
-          {text['functional-components-page-usereducer-tasks-remove']}
-        </button>
-      </div>
-
-      <div className={`App ${tema}`}>
-        <h3>{text['functional-components-page-usereducer-theme']}</h3>
-        <h1>
-          {text['functional-components-page-usereducer-theme-mode']}
-          {tema}
-        </h1>
-        <button onClick={() => dispatch({ type: 'TOGGLE' })}>
-          {text['functional-components-page-usereducer-theme-button']}
-        </button>
+        <div className={`App ${tema}`}>
+          <h3>{text['functional-components-page-usereducer-theme']}</h3>
+          <h1>
+            {text['functional-components-page-usereducer-theme-mode']}
+            {tema}
+          </h1>
+          <button onClick={() => dispatch({ type: 'TOGGLE' })}>
+            {text['functional-components-page-usereducer-theme-button']}
+          </button>
+        </div>
       </div>
     </div>
   );
