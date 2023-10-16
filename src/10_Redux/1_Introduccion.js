@@ -1,6 +1,6 @@
 import text from '../translations/es/global.json';
 import MasEjemplos from './3_Mas_ejemplos';
-import { H1t10 } from '../components/Headers';
+import { H1t10 } from '../components/Headers/Headers';
 /*
   TUTORIAL: https://youtu.be/fMiFnbufAP4?si=xkxqMY-xoEN6YpaU
   En primer lugar, iremos a App.js e importaremos

@@ -1,5 +1,5 @@
 import text from '../translations/es/global.json';
-import { H1t1 } from '../components/Headers';
+import { H1t1 } from '../components/Headers/Headers';
 import { Component } from 'react';
 
 export default class Introduccion extends Component {
@@ -21,7 +21,7 @@ export default class Introduccion extends Component {
       <div>
         <H1t1 />
         <p style={{ cursor: 'pointer' }} onClick={this.toggleImage}>
-          {text['introduction-page-text']}
+          {text['introduction-page-hello-world']}
         </p>
         {this.state.showImage && (
           <img src={require('../images/t1/1._holam-removebg-preview.png')} alt='Componente Hola Mundo' />

@@ -21,7 +21,8 @@
   "datarouter-page-not-found-component": "NOT FOUND",
 
   "introduction-page-title": "1. Introducción a React",
-  "introduction-page-text": "Hola Mundo",
+  "introduction-page-hello-world": "Hola Mundo",
+  "introduction-page-structure": "1.1. Estructura del proyecto",
 
   "class-component-page-title": "2. Componentes con clases",
   "class-component-page-state": "2.1. El Estado",

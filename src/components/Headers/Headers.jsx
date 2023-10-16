@@ -1,4 +1,5 @@
-import text from '../translations/es/global.json';
+import text from '../../translations/es/global.json';
+import './Headers.css';
 
 export function H1t1() {
   return (

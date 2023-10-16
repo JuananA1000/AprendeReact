@@ -1,4 +1,4 @@
-import { H1t2 } from '../components/Headers';
+import { H1t2 } from '../components/Headers/Headers';
 import { Component } from 'react';
 
 export class Introduccion extends Component {
@@ -14,13 +14,15 @@ export class Introduccion extends Component {
       showImage: !prevState.showImage,
     }));
   };
+
   render() {
     return (
       <div>
         <H1t2 />
 
         <div style={{ cursor: 'pointer' }} onClick={this.toggleImage}>
-          Click aqui para ver el código básico de un componente de clase
+       
+       
         </div>
         {this.state.showImage && (
           <img src={require('../images/t2/Diseño sin título.png')} alt='Componente Hola Mundo' />

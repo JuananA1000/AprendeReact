@@ -7,6 +7,7 @@ import Crear from '../0_Crear/Crear';
 // ----------------- TEMA 1. Introduccion a React ---------------- //
 // --------------------------------------------------------------- //
 import IntroT1 from '../1_Introduccion/1_Introduccion';
+import EstructuraDelProyecto from '../1_Introduccion/2_Estructura_del_proyecto';
 
 // --------------------------------------------------------------- //
 // ------------ TEMA 2. Componentes basados en clases ------------ //
@@ -139,7 +140,15 @@ export default function App() {
               path='/'
               element={<h1>Holi</h1>}
             />
-            <Route path='/tema1' element={<IntroT1 />} />
+            <Route
+              path='/tema1'
+              element={
+                <>
+                  <IntroT1 />
+                  <EstructuraDelProyecto />
+                </>
+              }
+            />
             <Route
               path='/tema2'
               element={

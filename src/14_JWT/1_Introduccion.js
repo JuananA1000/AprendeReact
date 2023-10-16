@@ -1,4 +1,4 @@
-import { H1t14 } from '../components/Headers';
+import { H1t14 } from '../components/Headers/Headers';
 import text from '../translations/es/global.json';
 
 /* 

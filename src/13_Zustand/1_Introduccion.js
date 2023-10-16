@@ -1,6 +1,6 @@
 import text from '../translations/es/global.json';
 import { counterStore } from './store/counterStore';
-import { H1t13 } from '../components/Headers';
+import { H1t13 } from '../components/Headers/Headers';
 
 /*
   Zustand es una biblioteca para aplicaciones ReactJS que permite manejar del estado global de nuestra aplicación de
