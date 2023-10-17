@@ -44,7 +44,7 @@ export function H1t13() {
 export function H1t14() {
   return (
     <div>
-      <h1>{text['jwt-page-title']}</h1>
+      <h1>{text['dnd-page-title']}</h1>
     </div>
   );
 }

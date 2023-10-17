@@ -111,9 +111,9 @@ import LimpiarEstado from '../13_Zustand/4_Limpiar_estado';
 import MetodoGet from '../13_Zustand/5_Metodo_get';
 
 // --------------------------------------------------------------- //
-// ------------------- TEMA 14. Java Web Tokens ------------------ //
+// -------------------- TEMA 14. Drag and Drop ------------------- //
 // --------------------------------------------------------------- //
-import IntroT14 from '../14_JWT/1_Introduccion';
+import IntroT14 from '../14_Drag_and_Drop/1_Introduccion';
 
 // --------------------------------------------------------------- //
 // -                          EXTRAS                             - //

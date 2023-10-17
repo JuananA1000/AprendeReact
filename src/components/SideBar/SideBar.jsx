@@ -20,7 +20,7 @@ const Sidebar = ({ children }) => {
     {
       path: '/tema3',
       tema: 'Tema3',
-      nombreTema: 'Comp funcionales',
+      nombreTema: 'Componentes Funcionales',
     },
     {
       path: '/tema4',
@@ -60,7 +60,7 @@ const Sidebar = ({ children }) => {
     {
       path: '/tema11',
       tema: 'Tema11',
-      nombreTema: 'Conexion a APIs',
+      nombreTema: 'Conexión a APIs',
     },
     {
       path: '/tema12',
@@ -75,7 +75,7 @@ const Sidebar = ({ children }) => {
     {
       path: '/tema14',
       tema: 'Tema14',
-      nombreTema: 'JSON Web Tokens',
+      nombreTema: 'Drag & Drop',
     },
   ];
 

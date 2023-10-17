@@ -77,6 +77,10 @@ In this project, we have installed the following libraries:
 
 ### `npm i -S axios`
 
+**Drag & Drop** is a a modern drag and drop toolkit for React
+  
+### `npm i @dnd-kit/core`
+
 **Formik** is a popular library for managing form state in React applications
   
 ### `npm i -S formik`
@@ -95,7 +99,7 @@ In this project, we have installed the following libraries:
 
 **Redux** is a predictable state management library for JavaScript applications, commonly used with React
 
-### 'npm i -S redux @reduxjs/toolkit'
+### `npm i -S redux @reduxjs/toolkit`
 
 **Zustand** is a state management library for React that aims to provide a simple and flexible way to manage state in
 your applications
