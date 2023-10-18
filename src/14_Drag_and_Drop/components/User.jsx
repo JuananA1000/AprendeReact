@@ -20,6 +20,7 @@ export default function User({ user }) {
           padding: '30px',
           borderRadius: '10px',
           marginBottom: '10px',
+          color: '#1E5F08',
         }}>
         {user.name}
       </h3>
