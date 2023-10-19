@@ -13,7 +13,7 @@ export default function MetodoGet() {
     <div>
       <h2>{text['zustand-page-get']}</h2>
 
-      <div>
+      <div className='greenGradient'>
         {text['zustand-page-get-counter']}
         {values.contador}
         <br />

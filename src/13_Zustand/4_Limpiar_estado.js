@@ -13,7 +13,7 @@ export default function LimpiarEstado() {
     <div>
       <h2>{text['zustand-page-clear']}</h2>
 
-      <div>
+      <div className='greenGradient'>
         {text['zustand-page-clear-counter']}
         {values.contador}
         <br />

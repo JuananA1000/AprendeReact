@@ -14,7 +14,7 @@ export default function ActualizarDatosAsync() {
     <div>
       <h2>{text['zustand-page-asyncupdate']}</h2>
 
-      <div>
+      <div className='greenGradient'>
         {text['zustand-page-asyncupdate-counter']}
         {values.contador}
         <br />

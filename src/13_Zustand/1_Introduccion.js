@@ -2,6 +2,7 @@ import text from '../translations/es/global.json';
 import { counterStore } from './store/counterStore';
 import { H1t13 } from '../components/Headers/Headers';
 
+
 /*
   Zustand es una biblioteca para aplicaciones ReactJS que permite manejar del estado global de nuestra aplicación de
   manera más sencilla que Redux.
@@ -24,23 +25,25 @@ export default function Introduccion() {
     <div>
       <H1t13 />
 
-      <p>{text['zustand-page-description']}</p>
       <h2>{text['zustand-page-intro']}</h2>
+      <p>{text['zustand-page-description']}</p>
 
-      <h3>{text['zustand-page-intro-one-by-one']}</h3>
-      <div style={{ backgroundColor: 'red', width: '400px' }}>
-        {text['zustand-page-intro-one-by-one-counter']} {contador}
-        <br />
-        {text['zustand-page-intro-one-by-one-title']} {titulo}
-      </div>
+      <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+        <div className='greenGradient'>
+          <h3>{text['zustand-page-intro-one-by-one']}</h3>
+          {text['zustand-page-intro-one-by-one-counter']} {contador}
+          <br />
+          {text['zustand-page-intro-one-by-one-title']} {titulo}
+        </div>
 
-      <h3> {text['zustand-page-intro-object']}</h3>
-      <div style={{ backgroundColor: 'red', width: '400px' }}>
-        {text['zustand-page-intro-object-counter']}
-        {values.contador}
-        <br />
-        {text['zustand-page-intro-object-title']}
-        {values.titulo}
+        <div className='greenGradient'>
+          <h3> {text['zustand-page-intro-object']}</h3>
+          {text['zustand-page-intro-object-counter']}
+          {values.contador}
+          <br />
+          {text['zustand-page-intro-object-title']}
+          {values.titulo}
+        </div>
       </div>
     </div>
   );

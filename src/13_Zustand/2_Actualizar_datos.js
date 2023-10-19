@@ -16,7 +16,7 @@ export default function ActualizarDatos() {
     <div>
       <h2>{text['zustand-page-update']}</h2>
 
-      <div>
+      <div className='greenGradient'>
         {text['zustand-page-update-counter']}
         {values.contador}
         <br />
