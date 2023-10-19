@@ -10,20 +10,24 @@ export default function User({ user }) {
   const style = {
     transform: CSS.Transform.toString(transform),
     transition,
+
+    color: '#1E5F08',
+    background: 'linear-gradient(180deg, #4ed61e 0%, #688800 99.99%, rgba(57, 82, 48, 0) 100%)',
+    padding: '23px',
+    borderRadius: '10px',
+    marginBottom: '10px',
+    display: 'flex',
+    justifyContent: 'space-around',
+    alignItems: 'center',
   };
 
   return (
     <div {...attributes} {...listeners} ref={setNodeRef} style={style}>
-      <h3
-        style={{
-          background: 'linear-gradient(180deg, #4ed61e 0%, #688800 99.99%, rgba(57, 82, 48, 0) 100%)',
-          padding: '30px',
-          borderRadius: '10px',
-          marginBottom: '10px',
-          color: '#1E5F08',
-        }}>
-        {user.name}
-      </h3>
+      <h3>{user.name}</h3>
+      <div style={{ backgroundColor: '#1E5F08', padding: 11, borderRadius: '10px' }}>
+        <h2>{user.id}</h2>
+      </div>
+      <img src={user.img} width={50} />
     </div>
   );
 }
