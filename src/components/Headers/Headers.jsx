@@ -25,6 +25,14 @@ export function H1t3() {
   );
 }
 
+export function H1t4() {
+  return (
+    <div>
+      <h1>{text['form-page-title']}</h1>
+    </div>
+  );
+}
+
 export function H1t10() {
   return (
     <div>
