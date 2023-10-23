@@ -11,6 +11,7 @@ export default function User({ user }) {
     transform: CSS.Transform.toString(transform),
     transition,
 
+    // Estilos en línea
     color: '#1E5F08',
     background: 'linear-gradient(180deg, #4ed61e 0%, #688800 99.99%, rgba(57, 82, 48, 0) 100%)',
     padding: '23px',
