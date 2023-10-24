@@ -29,16 +29,25 @@ export default function ValoresMultiples() {
       <div>
         <h2>{text['form-page-controlled-components-multiple-values']}</h2>
       </div>
-      <div style={{ display: 'flex' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+        {/* ------------------------------------------------------- 
+        // -                      CAMPO TEXT                      - 
+        // -----------------------------------------------------*/}
         <div>
           <h3>{text['form-page-controlled-components-text-field']}</h3>
           <input type='text' name='normal' value={valores.normal} onChange={cambiarValor} />
         </div>
+        {/* ------------------------------------------------------- 
+        // -                       CAMPO TEXTAREA                 - 
+        // ----------------------------------------------------------- */}
         <div>
           <h3>{text['form-page-controlled-components-textarea']}</h3>
           <textarea name='texto' value={valores.texto} onChange={cambiarValor} />
         </div>
 
+        {/* -------------------------------------------------------------- 
+        // -                       CAMPO SELECT                            - 
+        // ----------------------------------------------------------- */}
         <div>
           <h3>{text['form-page-controlled-components-select-field']}</h3>
           <select name='select' value={valores.select} onChange={cambiarValor}>
@@ -51,15 +60,20 @@ export default function ValoresMultiples() {
             </option>
           </select>
         </div>
+        {/* -------------------------------------------------------------- 
+        // -                       CAMPO CHECKBOX                            - 
+        // ----------------------------------------------------------- */}
 
         <div>
           <h3>{text['form-page-controlled-components-checkbox-field']}</h3>
           <input type='checkbox' name='check' checked={valores.check} onChange={cambiarValor} />
         </div>
 
+        {/* -------------------------------------------------------------- 
+        // -                       CAMPO RADIOBUTTON                            - 
+        // ----------------------------------------------------------- */}
         <div>
           <h3>{text['form-page-controlled-components-radiobutton-field']}</h3>
-          <label>{text['form-page-controlled-components-radiobutton-field-label']}</label>
           <input
             type='radio'
             name='estado'

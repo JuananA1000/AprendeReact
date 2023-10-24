@@ -24,8 +24,7 @@ export default function CompControlados() {
         />
         {valor.length < 5 ? (
           <p>
-            <span style={{ color: 'red' }}>{text['form-page-controlled-components-length-less-than']}</span>
-            <br />
+            <span style={{ color: 'yellow' }}>{text['form-page-controlled-components-length-less-than']}</span>
           </p>
         ) : (
           ''
