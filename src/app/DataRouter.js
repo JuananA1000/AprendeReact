@@ -138,7 +138,7 @@ export default function App() {
             <Route
               // Esta ruta es provisional. En el futuro esta será la intro de la página, con el botón de create-react-app
               path='/'
-              element={<h1>Holi</h1>}
+              element={<Crear/>}
             />
             <Route
               path='/tema1'

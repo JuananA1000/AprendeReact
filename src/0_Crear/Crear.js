@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import text from '../translations/es/global.json';
 
 import './Crear.css';
@@ -5,10 +6,13 @@ import './Crear.css';
 export default function Crear() {
   return (
     <div>
-      <button className='buttonClass'>{text['create-page']}</button>
-      <p onClick={() => navigator.clipboard.writeText('npm init react-app nombre-app')}>
+      <Link to='/tema1'>
+        <button className='buttonClass'>{text['create-page']}</button>
         {text['create-page-subtitle']}
-      </p>
+      </Link>
+        {/* 
+          COPIAR EL COMANDO: navigator.clipboard.writeText('npm init react-app nombre-app')}>
+        */}
     </div>
   );
 }
