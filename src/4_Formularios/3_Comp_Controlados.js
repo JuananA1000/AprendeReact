@@ -9,7 +9,7 @@ export default function CompControlados() {
   };
 
   return (
-    <>
+    <div>
       <div>
         <h2>{text['form-page-controlled-components']}</h2>
       </div>
@@ -22,14 +22,16 @@ export default function CompControlados() {
           // El evento onChange, hace que nuestro componente se actualice cada vez que pulsamos una tecla.
           onChange={cambiarValor}
         />
-        {valor.length < 5 ? (
+        {valor.length >= 1 && valor.length < 5 ? (
           <p>
-            <span style={{ color: 'yellow' }}>{text['form-page-controlled-components-length-less-than']}</span>
+            <span style={{ backgroundColor: 'red', color: 'white' }}>
+              {text['form-page-controlled-components-length-less-than']}
+            </span>
           </p>
         ) : (
           ''
         )}
       </div>
-    </>
+    </div>
   );
 }
