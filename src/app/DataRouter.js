@@ -119,7 +119,7 @@ import IntroT14 from '../14_Drag_and_Drop/1_Introduccion';
 // -                          EXTRAS                             - //
 // --------------------------------------------------------------- //
 // * REACT ROUTER
-import { NavLink, Route, Routes } from 'react-router-dom';
+import {  Route, Routes } from 'react-router-dom';
 // * REDUX
 import { store } from '../10_Redux/store/store';
 import { Provider } from 'react-redux';
@@ -127,9 +127,11 @@ import { Provider } from 'react-redux';
 import './DataRouter.css'; // Importa tu archivo de estilos aquí
 // * lITERALES
 import text from '../translations/es/global.json';
-import Sidebar from '../components/SideBar/SideBar';
+
 
 export default function App() {
+
+
   return (
     <div>
       <div>
@@ -138,17 +140,17 @@ export default function App() {
             <Route
               // Esta ruta es provisional. En el futuro esta será la intro de la página, con el botón de create-react-app
               path='/'
-              element={<Crear/>}
+              element={<Crear />}
             />
-            <Route
-              path='/tema1'
-              element={
-                <>
-                  <IntroT1 />
-                  <EstructuraDelProyecto />
-                </>
-              }
-            />
+              <Route
+                path='/tema1'
+                element={
+                  <>
+                    <IntroT1 />
+                    <EstructuraDelProyecto />
+                  </>
+                }
+              />
             <Route
               path='/tema2'
               element={
