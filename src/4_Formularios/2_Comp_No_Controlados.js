@@ -17,8 +17,8 @@ export default function CompNoControlados() {
     form.append('campo', input.current.value);
     form.append('archivo', file.current.files[0]);
 
-    // Enviaremos el formulario a un endpoint de ejemplo. Este NO EXISTE, por lo que nos saltará un ERROR 404 NOT FOUND 
-    fetch('/endpointEjemplo', { method: 'POST', body: form }); 
+    // Enviaremos el formulario a un endpoint de ejemplo. Este NO EXISTE, por lo que nos saltará un ERROR 404 NOT FOUND
+    fetch('/endpointEjemplo', { method: 'POST', body: form });
     /*
       En este punto, para comprobar las peticiones al servidor que haga nuestro metodo fetch(), nos dirigiremos a la
       pestaña Network de la consola del navegador.
@@ -32,7 +32,7 @@ export default function CompNoControlados() {
       </div>
 
       <form onSubmit={submit}>
-        <input type='text' name='campo' ref={input} placeholder='Escribe...'/>
+        <input type='text' name='campo' ref={input} placeholder={text['form-page-uncontrolled-components-placeholder']} />
         <input type='file' name='archivo' ref={file} />
         <input type='submit' value={text['form-page-uncontrolled-components-send']} />
       </form>

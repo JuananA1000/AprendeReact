@@ -76,6 +76,7 @@
   "form-page-intro": "4.1. Introducción",
   "form-page-button-send": "Enviar",
   "form-page-uncontrolled-components": "4.2. Componentes no controlados",
+  "form-page-uncontrolled-components-placeholder": "Seleccionar Archivo...",
   "form-page-uncontrolled-components-send": "Enviar",
   "form-page-controlled-components": "4.3. Componentes controlados",
   "form-page-controlled-components-length-less-than": "longitud menor a 5",
@@ -294,6 +295,6 @@
   "dnd-page-title": "14. Drag & Drop",
   "dnd-page-intro": "14.1 Introducción",
   "dnd-page-intro-reset": "Reiniciar",
-  
+
   "": ""
 }
