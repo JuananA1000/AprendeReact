@@ -5,12 +5,15 @@ import './SideBar.css';
 // TUTORIAL: https://youtu.be/IathdVB65Lw?si=cNSw628Ue1lk3Ud9&t=315
 
 const Sidebar = ({ children }) => {
+
+  // PENDIENTE: Editar sidebar para que aparezca en todas las rutas excepto en '/'
+
   const menuItem = [
     {
       path: '/tema1',
       tema: 'Tema1',
       nombreTema: 'Intro',
-      // PENDIENTE: A lo mejor le añado iconos con alguna librería
+      // IDEA: A lo mejor le añado iconos con alguna librería
     },
     {
       path: '/tema2',
