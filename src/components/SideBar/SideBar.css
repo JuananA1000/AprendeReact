@@ -20,6 +20,7 @@ main {
   width: 3200px;
   transition: all 0.5s;
 }
+
 .top_section {
   display: flex;
   align-items: center;
@@ -54,8 +55,7 @@ main {
 }
 
 .active {
-  text-decoration: underline;
-  color: #000;
+  color: #000000;
 }
 
 .icon,
