@@ -55,13 +55,24 @@ export default function Introduccion() {
 
       <h2> {text['api-conection-page-intro']}</h2>
 
-      <h3>{text['api-conection-page-intro-chuck']} </h3>
-      <button onClick={obtenerFrase}>{text['api-conection-page-intro-chuck-get']} </button>
-      {isButtonClicked && <p>{frase}</p>}
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'space-around',
+        }}>
+        <div>
+          <h3>{text['api-conection-page-intro-chuck']} </h3>
+          <button onClick={obtenerFrase}>{text['api-conection-page-intro-chuck-get']} </button>
+          {isButtonClicked && <p style={{ marginTop: '10px' }}>{frase}</p>}
+        </div>
 
-      <h3>{text['api-conection-page-intro-useless']} </h3>
-      <button onClick={obtenerFact}>{text['api-conection-page-intro-useless-get']} </button>
-      {isButtonClicked && <p>{fact}</p>}
+        <div>
+          <h3>{text['api-conection-page-intro-useless']} </h3>
+          <button onClick={obtenerFact}>{text['api-conection-page-intro-useless-get']} </button>
+          {isButtonClicked && <p style={{ marginTop: '10px' }}>{fact}</p>}
+        </div>
+      </div>
     </div>
   );
 }
