@@ -1,6 +1,7 @@
 import { Formik, Form } from 'formik';
 import * as Yup from 'yup';
 import Input from '../Input';
+import text from '../../../translations/es/global.json';
 
 const MyForm = ({ onSubmit }) => {
   console.log('renderizando my form');
@@ -17,13 +18,13 @@ const MyForm = ({ onSubmit }) => {
       }}
       onSubmit={handleSubmit}
       validationSchema={Yup.object({
-        name: Yup.string().required('Obligatorio'),
-        lastname: Yup.string().required('Obligatorio'),
+        name: Yup.string().required(text['performance-page-myform-component-required']),
+        lastname: Yup.string().required(text['performance-page-myform-component-required']),
       })}>
       <Form>
-        <Input name='name' label='Nombre' />
-        <Input name='lastname' label='Apellido' />
-        <button type='submit'>Enviar</button>
+        <Input name='name' label={text['performance-page-myform-component-name']} />
+        <Input name='lastname' label={text['performance-page-myform-component-lastname']} />
+        <button type='submit'>{text['performance-page-myform-component-send']}</button>
       </Form>
     </Formik>
   );

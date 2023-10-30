@@ -15,8 +15,8 @@ function App() {
 
   return (
     <div>
-      <h2>{text['performance-page-title-memo']}</h2>
-      <Title>{text['performance-page-title-my-title']}</Title>
+      <h2>{text['performance-page-memo']}</h2>
+      <Title>{text['performance-page-memo-my-title']}</Title>
       <MyForm onSubmit={handleSubmit} />
       <ListChildren data={valores} />
     </div>
