@@ -4,8 +4,7 @@ import text from '../translations/es/global.json';
 export default function Introduccion() {
   const [frase, setFrase] = useState('');
   const [fact, setFact] = useState('');
-
-  const [isButtonClicked, setIsButtonClicked] = useState(false);
+  const [botonClickeado, setBotonClickeado] = useState(false);
 
   const obtenerFact = () => {
     const uselessURL = 'https://uselessfacts.jsph.pl/api/v2/facts/random';
@@ -25,7 +24,7 @@ export default function Introduccion() {
         console.error('Error:', error);
       });
 
-    setIsButtonClicked(true);
+    setBotonClickeado(true);
   };
 
   const obtenerFrase = () => {
@@ -46,7 +45,7 @@ export default function Introduccion() {
         console.error('Error:', error);
       });
 
-    setIsButtonClicked(true);
+    setBotonClickeado(true);
   };
 
   return (
@@ -61,16 +60,24 @@ export default function Introduccion() {
           flexDirection: 'row',
           justifyContent: 'space-around',
         }}>
-        <div>
+        <div className='greenGradient'>
           <h3>{text['api-conection-page-intro-chuck']} </h3>
           <button onClick={obtenerFrase}>{text['api-conection-page-intro-chuck-get']} </button>
-          {isButtonClicked && <p style={{ marginTop: '10px' }}>{frase}</p>}
+          {botonClickeado && (
+            <div>
+              <p style={{ marginTop: '10px' }}>{frase}</p>
+            </div>
+          )}
         </div>
 
-        <div>
+        <div className='greenGradient'>
           <h3>{text['api-conection-page-intro-useless']} </h3>
           <button onClick={obtenerFact}>{text['api-conection-page-intro-useless-get']} </button>
-          {isButtonClicked && <p style={{ marginTop: '10px' }}>{fact}</p>}
+          {botonClickeado && (
+            <div>
+              <p style={{ marginTop: '10px' }}>{fact}</p>
+            </div>
+          )}
         </div>
       </div>
     </div>
