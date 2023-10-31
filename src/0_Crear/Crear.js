@@ -8,9 +8,8 @@ export default function Crear() {
     <div>
       <Link to='/tema1'>
         <button className='buttonClass'>{text['create-page']}</button>
-        {text['create-page-subtitle']}
       </Link>
-        {/* 
+      {/* 
           COPIAR EL COMANDO: navigator.clipboard.writeText('npm init react-app nombre-app')}>
         */}
     </div>
