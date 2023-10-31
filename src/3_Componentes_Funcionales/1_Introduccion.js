@@ -4,6 +4,10 @@ import { useState } from 'react';
 import './style.css'
 
 const MiComponente = ({ unaProp, otraProp }) => {
+  /*
+    Para importar imágenes desde la carpeta public, se hará de la siguiente forma:
+    <img src={window.location.origin + '/imagen.png'} alt='imagen' />
+  */
   const [mostrarImagen, setMostrarImagen] = useState(false);
 
   return (
