@@ -18,8 +18,6 @@ const UseState = () => {
   const [luz, setLuz] = useState(require('../images/t3/sun.png'));
   const [claseDiv, setClaseDiv] = useState('day');
 
-  const botonBorrar = <button>BORRAR</button>;
-
   const modoDia = () => {
     setLuz(require('../images/t3/sun.png'));
     setClaseDiv('day');
@@ -115,6 +113,9 @@ const UseState = () => {
               <li key={index}>{item}</li>
             ))}
           </ul>
+          {items.length === 3 && (
+            <button onClick={() => setItems([])}>{text['functional-components-page-usestate-remove-button']}</button>
+          )}
         </div>
       </div>
     </div>
