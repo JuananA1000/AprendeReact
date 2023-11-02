@@ -6,8 +6,6 @@ import './SideBar.css';
 
 const Sidebar = ({ children }) => {
 
-  // PENDIENTE: Editar sidebar para que aparezca en todas las rutas excepto en '/'
-
   const menuItem = [
     {
       path: '/tema1',

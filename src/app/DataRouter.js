@@ -119,7 +119,7 @@ import IntroT14 from '../14_Drag_and_Drop/1_Introduccion';
 // -                          EXTRAS                             - //
 // --------------------------------------------------------------- //
 // * REACT ROUTER
-import {  Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 // * REDUX
 import { store } from '../10_Redux/store/store';
 import { Provider } from 'react-redux';
@@ -127,113 +127,110 @@ import { Provider } from 'react-redux';
 import './DataRouter.css'; // Importa tu archivo de estilos aquí
 // * lITERALES
 import text from '../translations/es/global.json';
-
+import SideBar from '../components/SideBar/SideBar';
 
 export default function App() {
-
-
   return (
     <div>
       <div>
         <section>
           <Routes>
             <Route
-              // Esta ruta es provisional. En el futuro esta será la intro de la página, con el botón de create-react-app
               path='/'
               element={<Crear />}
             />
-              <Route
-                path='/tema1'
-                element={
-                  <>
-                    <IntroT1 />
-                    <EstructuraDelProyecto />
-                  </>
-                }
-              />
+            <Route
+              path='/tema1'
+              element={
+                <SideBar>
+                  <IntroT1 />
+                  <EstructuraDelProyecto />
+                </SideBar>
+              }
+            />
             <Route
               path='/tema2'
               element={
-                <>
+                <SideBar>
                   <IntroT2 />
                   <ElEstado />
                   <RenderizarComponente />
-                </>
+                </SideBar>
               }></Route>
             <Route
               path='/tema3'
               element={
-                <>
+                <SideBar>
                   <IntroT3 />
                   <UseState />
                   <UseEffect />
                   <UseReducer />
                   <UseRef />
-                </>
+                </SideBar>
               }
             />
             <Route
               path='/tema4'
               element={
-                <>
+                <SideBar>
                   <IntroT4 />
                   <CompNoCtrl />
                   <CompCtrl />
                   <ValoresMultiples />
-                </>
+                </SideBar>
               }
             />
             <Route
               path='/tema5'
               element={
-                <>
+                <SideBar>
                   <IntroT5 />
                   <Validaciones />
                   <EliminaCodigoRepe />
                   <CompFormik />
                   <CompCustom />
-                </>
+                </SideBar>
               }
             />
             <Route
               path='/tema6'
               element={
-                <>
+                <SideBar>
                   <IntroT6 />
                   <PropsDinamicas />
                   <ExtendiendoEstilos />
                   <Animaciones />
-                </>
+                </SideBar>
               }
             />
             <Route
               path='/tema7'
               element={
-                <>
+                <SideBar>
                   <IntroT7 />
                   <MemoConChildren />
                   <UseCallback />
                   <UseMemo />
-                </>
+                </SideBar>
               }
             />
             <Route
               path='/tema8'
               element={
-                <>
+                <SideBar>
                   <IntroT8 />
                   <ActualizarEstado />
                   <ProblemaDeContext />
                   <ContextEnComponentesDeClase />
                   <MultiplesContextos />
                   <MultiplesContextosEnCompFunc />
-                </>
+                </SideBar>
               }
             />
             <Route
               path='/tema9'
               element={
-                <>
+                <SideBar>
                   <IntroT9 />
                   <CreandoSPA />
                   <CapturarSegmentosDinamicos />
@@ -241,61 +238,71 @@ export default function App() {
                   <LinksActivos />
                   <UseRoutes />
                   <UseAuth />
-                </>
+                </SideBar>
               }
             />
             <Route
               path='/tema10'
               element={
-                <Provider store={store}>
-                  <IntroT10 />
-                  <CompYEstadoGlobal />
-                  <DepurarRedux />
-                </Provider>
+                <SideBar>
+                  <Provider store={store}>
+                    <IntroT10 />
+                    <CompYEstadoGlobal />
+                    <DepurarRedux />
+                  </Provider>
+                </SideBar>
               }
             />
             <Route
               path='/tema11'
               element={
-                <>
+                <SideBar>
                   <IntroT11 />
                   <FetchComoUnPRO />
                   <FetchConCustomHooks />
                   <ComprobarPeticion />
                   <CancelarPeticion />
                   <RenderAsYouFetch />
-                </>
+                </SideBar>
               }
             />
             <Route
               path='/tema12'
               element={
-                <>
+                <SideBar>
                   <IntroT12 />
-                </>
+                </SideBar>
               }
             />
             <Route
               path='/tema13'
               element={
-                <>
+                <SideBar>
                   <IntroT13 />
                   <ActualizarDatos />
                   <ActualizarDatosAsync />
                   <LimpiarEstado />
                   <MetodoGet />
-                </>
+                </SideBar>
               }
             />
             <Route
               path='/tema14'
               element={
-                <>
+                <SideBar>
                   <IntroT14 />
-                </>
+                </SideBar>
               }
             />
-            <Route path='*' element={<h1>{text['datarouter-page-not-found-component']}</h1>} />
+
+            <Route
+              path='*'
+              element={
+                <SideBar>
+                  <h1>{text['datarouter-page-not-found-component']}</h1>
+                </SideBar>
+              }
+            />
           </Routes>
         </section>
       </div>
