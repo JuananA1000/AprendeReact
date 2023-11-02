@@ -1,6 +1,9 @@
+body {
+  background-color: #c57600;
+}
+
 .App {
   text-align: left;
-  background-color: #c57600;
   /* max-width: 1440px; */
 }
 
