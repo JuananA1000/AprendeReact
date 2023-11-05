@@ -128,6 +128,8 @@ import './DataRouter.css'; // Importa tu archivo de estilos aquí
 // * lITERALES
 import text from '../translations/es/global.json';
 import SideBar from '../components/SideBar/SideBar';
+// * TRADUCTOR
+import Traductor from '../components/Traductor/Traductor';
 
 export default function App() {
   return (
@@ -304,6 +306,7 @@ export default function App() {
               }
             />
           </Routes>
+
         </section>
       </div>
     </div>

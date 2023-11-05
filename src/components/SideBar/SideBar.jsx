@@ -1,11 +1,11 @@
 import text from '../../translations/es/global.json';
 import { NavLink } from 'react-router-dom';
 import './SideBar.css';
+import Traductor from '../Traductor/Traductor';
 
 // TUTORIAL: https://youtu.be/IathdVB65Lw?si=cNSw628Ue1lk3Ud9&t=315
 
 const Sidebar = ({ children }) => {
-
   const menuItem = [
     {
       path: '/tema1',
@@ -96,6 +96,7 @@ const Sidebar = ({ children }) => {
             </div>
           </NavLink>
         ))}
+        <Traductor />
       </div>
       <main>{children}</main>
     </div>
