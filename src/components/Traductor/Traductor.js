@@ -8,13 +8,13 @@ export default function Traductor() {
     <div>
       <button
         onClick={() => {
-          setIdioma('es');
+          console.log('ESPAÑOL');
         }}>
         {text['sidebar-component-button-sp']}
       </button>
       <button
         onClick={() => {
-          setIdioma('en');
+          console.log('INGLÉS');
         }}>
         {text['sidebar-component-button-en']}
       </button>
