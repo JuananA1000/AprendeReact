@@ -2,6 +2,8 @@
   "create-page": "create-react-app",
 
   "sidebar-component-index": "Índice",
+  "sidebar-component-button-sp": "ES",
+  "sidebar-component-button-en": "EN",
 
   "datarouter-page": "React",
   "datarouter-page-navlink-t1": "Introduccion a React",
