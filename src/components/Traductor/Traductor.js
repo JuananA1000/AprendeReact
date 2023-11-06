@@ -2,15 +2,7 @@ import { useState } from 'react';
 
 export default function Traductor() {
   const [idioma, setIdioma] = useState('es');
-  // const translations = require(`../../translations/es/${idioma}.json`);
-
-  const toggleidioma = () => {
-    if (idioma === 'es') {
-      setIdioma('en');
-    } else {
-      setIdioma('es');
-    }
-  };
+  const text = require(`../../translations/${idioma}/global.json`);
 
   return (
     <div>
@@ -18,13 +10,13 @@ export default function Traductor() {
         onClick={() => {
           setIdioma('es');
         }}>
-        ES
+        {text['sidebar-component-button-sp']}
       </button>
       <button
         onClick={() => {
           setIdioma('en');
         }}>
-        EN
+        {text['sidebar-component-button-en']}
       </button>
     </div>
   );
