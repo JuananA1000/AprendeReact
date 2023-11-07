@@ -1,4 +1,5 @@
 import { Component, createContext } from 'react';
+import text from '../translations/es/global.json';
 
 const Contexto1 = createContext('Primer Contexto');
 const Contexto2 = createContext('Segundo Contexto');
@@ -29,7 +30,7 @@ export class MultiplesContextos extends Component {
   render() {
     return (
       <div>
-        <h2>Múltiples Contextos</h2>
+        <h2>{text['context-page-multiplecontext']}</h2>
 
         <Provider>
           <Componente />

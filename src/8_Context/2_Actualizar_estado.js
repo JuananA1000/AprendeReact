@@ -22,7 +22,7 @@ const Componente = () => {
 
   return (
     <div>
-      <button onClick={toggle}>{text['context-page-toggle-button']}</button>
+      <button onClick={toggle}>{text['context-page-updatestatus-toggle-button']}</button>
       <label>{valor.toString()}</label>
     </div>
   );
@@ -31,7 +31,7 @@ const Componente = () => {
 export default function ActualizarEstado() {
   return (
     <div>
-      <h2>{text['context-page-update-status']}</h2>
+      <h2>{text['context-page-updatestatus']}</h2>
 
       <Provider>
         <Componente />

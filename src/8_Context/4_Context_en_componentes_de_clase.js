@@ -1,4 +1,5 @@
 import { Component, createContext } from 'react';
+import text from '../translations/es/global.json';
 
 const Contexto = createContext('Valor por defecto');
 
@@ -10,7 +11,7 @@ class Componente extends Component {
   // static contextType = Contexto;
   render() {
     // console.log('This context en Componente: ', this.context);
-    return <p>Hola Mundo</p>;
+    return <p>{text['context-page-contextclass-component']}</p>;
   }
 }
 Componente.contextType = Contexto;
@@ -19,7 +20,7 @@ export class ContextEnComponentesDeClase extends Component {
   render() {
     return (
       <div>
-        <h2>Context en componentes de clase</h2>
+        <h2>{text['context-page-contextclass']}</h2>
 
         <Provider>
           <Componente />

@@ -1,4 +1,5 @@
 import { createContext, useContext } from 'react';
+import text from '../translations/es/global.json';
 
 const Contexto1 = createContext('Primer Contexto');
 const Contexto2 = createContext('Segundo Contexto');
@@ -22,7 +23,7 @@ const ComponenteFuncional = () => {
 export default function MultiplesContextosEnCompFunc() {
   return (
     <div>
-      <h2>Múltiples Contextos en Componentes Funcionales</h2>
+      <h2>{text['context-page-multiplecontextfunc']}</h2>
 
       <Provider>
         <ComponenteFuncional />

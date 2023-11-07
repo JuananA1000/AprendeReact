@@ -24,7 +24,7 @@ const Incrementar = () => {
 
   return (
     <div>
-      <button onClick={incrementar}>{text['context-page-increase-button']}</button>
+      <button onClick={incrementar}>{text['context-page-contextproblem-increase-button']}</button>
     </div>
   );
 };
@@ -35,7 +35,7 @@ const Decrementar = () => {
 
   return (
     <div>
-      <button onClick={decrementar}>{text['context-page-decrease-button']}</button>
+      <button onClick={decrementar}>{text['context-page-contextproblem-decrease-button']}</button>
     </div>
   );
 };
@@ -44,13 +44,13 @@ const Etiqueta = () => {
   console.log('ETIQUETA');
   const { contador } = useContext(Contexto);
 
-  return <h1>{contador}</h1>;
+  return <h2>{contador}</h2>;
 };
 
 export default function ProblemaDeContext() {
   return (
     <div>
-      <h2>{text['context-page-context-problem']}</h2>
+      <h2>{text['context-page-contextproblem']}</h2>
 
       <ContadorProvider>
         <Etiqueta />
