@@ -9,12 +9,14 @@ export default function Traductor() {
       <button
         onClick={() => {
           console.log('ESPAÑOL');
+          setIdioma('es')
         }}>
         {text['sidebar-component-button-sp']}
       </button>
       <button
         onClick={() => {
           console.log('INGLÉS');
+          setIdioma('en')
         }}>
         {text['sidebar-component-button-en']}
       </button>

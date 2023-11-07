@@ -17,7 +17,7 @@ const ProviderPorDefecto = ({ children }) => {
 const Contenido = () => {
   const ctx = useContext(ContextoPorDefecto);
   return (
-    <div style={{ backgroundColor: 'green' }}>
+    <div style={{ backgroundColor: 'green', color:'white' }}>
       {text['context-page-contexttype-content-component']} {ctx}
     </div>
   );
@@ -26,7 +26,7 @@ const Contenido = () => {
 const Contenido2 = () => {
   const ctx = useContext(Contexto2);
   return (
-    <div style={{ backgroundColor: 'red' }}>
+    <div style={{ backgroundColor: 'red', color:'white' }}>
       {text['context-page-contexttype-content2-component']} {ctx}
     </div>
   );

@@ -14,7 +14,7 @@ export default function User({ user }) {
     // Estilos en línea
     color: '#1E5F08',
     background: 'linear-gradient(180deg, #4ed61e 0%, #688800 99.99%, rgba(57, 82, 48, 0) 100%)',
-    padding: '23px',
+    padding: '10px',
     borderRadius: '10px',
     marginBottom: '10px',
     display: 'flex',
@@ -25,7 +25,7 @@ export default function User({ user }) {
   return (
     <div {...attributes} {...listeners} ref={setNodeRef} style={style}>
       <h3>{user.name}</h3>
-      <div style={{ backgroundColor: '#1E5F08', padding: 11, borderRadius: '10px' }}>
+      <div style={{ backgroundColor: '#1E5F08', paddingLeft: 11, paddingRight: 11, borderRadius: '10px' }}>
         <h2>{user.id}</h2>
       </div>
       <img src={user.img} width={50} />
