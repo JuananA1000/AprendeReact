@@ -33,10 +33,66 @@ export function H1t4() {
   );
 }
 
+export function H1t5() {
+  return (
+    <div>
+      <h1>{text['formik-page-title']}</h1>
+    </div>
+  );
+}
+
+export function H1t6() {
+  return (
+    <div>
+      <h1>{text['styled-components-page-title']}</h1>
+    </div>
+  );
+}
+
+export function H1t7() {
+  return (
+    <div>
+      <h1>{text['performance-page-title']}</h1>
+    </div>
+  );
+}
+
+export function H1t8() {
+  return (
+    <div>
+      <h1>{text['context-page-title']}</h1>
+    </div>
+  );
+}
+
+export function H1t9() {
+  return (
+    <div>
+      <h1>{text['react-router-page-title']}</h1>
+    </div>
+  );
+}
+
 export function H1t10() {
   return (
     <div>
       <h1>{text['redux-page-title']}</h1>
+    </div>
+  );
+}
+
+export function H1t11() {
+  return (
+    <div>
+      <h1>{text['api-conection-page-title']}</h1>
+    </div>
+  );
+}
+
+export function H1t12() {
+  return (
+    <div>
+      <h1>{text['axios-page-title']}</h1>
     </div>
   );
 }
